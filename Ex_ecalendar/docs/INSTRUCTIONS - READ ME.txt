@@ -1,0 +1,17 @@
+INSTRUCTIONS GUIDE
+
+1. Upload "calendar.php" and "calendar" folder to your web.
+2. You must upload the 2 files together, otherwise the script won't work correctly.
+3. Don't change the name of any files because it will probably crash all the script.
+4. When the 2 files have been uploaded to the web go to "calendar/install.php" and complete the form. ONCE YOU HAVE FINISHED THE INSTALLATION, continue to step 5.
+5. Now delete the "install.php" file located in the calendar folder.
+
+-----
+
+You must know:
+
+Admin control panel: "/calendar/admin"
+Main calendar: "calendar.php"
+
+
+Enjoy the script!
