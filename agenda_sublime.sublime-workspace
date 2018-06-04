@@ -8,92 +8,26 @@
 	"buffers":
 	[
 		{
-			"file": "Ex_ecalendar/calendar/admin/js/script.js",
-			"settings":
-			{
-				"buffer_size": 13601,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "Ex_ecalendar/calendar/js/script.js",
-			"settings":
-			{
-				"buffer_size": 15238,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "Ex_ecalendar/calendar.php",
-			"settings":
-			{
-				"buffer_size": 2958,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "Ex_ecalendar/calendar/admin/index.php",
-			"settings":
-			{
-				"buffer_size": 5515,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"contents": "Searching 395 files for \"Control Panel\"\n\nC:\\xampp\\htdocs\\agenda\\calendar\\install.php:\n  152  \t\t\t\t\t\t\t\t<label class=\"col-sm-3 control-label\" for=\"inputUser\">Username</label>\n  153  \t\t\t\t\t\t\t\t<div class=\"col-sm-7\">\n  154: \t\t\t\t\t\t\t\t\t<input type=\"text\" class=\"form-control\" name=\"admin_user\" id=\"inputUser\" placeholder=\"The username you will use to enter the control panel\" autocomplete=\"off\" />\n  155  \t\t\t\t\t\t\t\t</div>\n  156  \t\t\t\t\t\t\t</div>\n  ...\n  158  \t\t\t\t\t\t\t\t<label class=\"col-sm-3 control-label\" for=\"inputPass\">Password</label>\n  159  \t\t\t\t\t\t\t\t<div class=\"col-sm-7\">\n  160: \t\t\t\t\t\t\t\t\t<input type=\"password\" class=\"form-control\" name=\"admin_pass\" placeholder=\"The password you will use to enter the control panel\" id=\"inputPass\" />\n  161  \t\t\t\t\t\t\t\t</div>\n  162  \t\t\t\t\t\t\t</div>\n\nC:\\xampp\\htdocs\\agenda\\calendar\\admin\\index.php:\n   11  <html>\n   12  \t<head>\n   13: \t<title>eCalendar - Control panel</title>\n   14  \t<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n   15  \t<meta charset=\"utf-8\">\n   ..\n   34  \t\t\t<div class=\"well\">\n   35  \t\t\t\t<div class=\"header\">\n   36: \t\t\t\t\t<h2 onclick=\"document.location.reload(true);\">Control Panel</h2>\n   37  \t\t\t\t\t<div class=\"btn-group pull-right\">\n   38  \t\t\t\t\t\t<button class=\"btn btn-default btn-medium\" onclick=\"sessionStorage.clear();document.location='../../calendar.php'\"><span class=\"glyphicon glyphicon-calendar\" style=\"margin-top: 1px !important\"></span>&nbsp;&nbsp;Calendar</button>\n\nC:\\xampp\\htdocs\\agenda\\calendar\\admin\\login.php:\n   37          <div class=\"container\">\n   38              <div class=\"box\">\n   39:                 <header>Control Panel</header>\n   40                  <section>\n   41                      <form action=\"\" method=\"post\">\n\nC:\\xampp\\htdocs\\agenda\\calendar\\admin\\php\\headerAdmin.php:\n    2  \t<h2 style=\"float: left; color: #FFF; margin: 0; font-size: 20px; font-weight: 200; line-height: 50px; margin-left: 20px;\">eCalendar</h2>\n    3  \t<div class=\"control-panel\">\n    4: \t\t<a class=\"btn\" href=\"calendar/admin\">Control Panel</a>\n    5  \t\t<input type=\"hidden\" id=\"admin\" value=\"true\" />\n    6  \t</div>\n\nC:\\xampp\\htdocs\\agenda\\docs\\index.html:\n  122  \t\t<ul>\n  123  \t\t\t<li>The Database Connection (DB Host, DB Name, etc)</li>\n  124: \t\t\t<li>Your Admin Account to log into the Calendar's Control Panel</li>\n  125  \t\t\t<li>The Calendar style ('Modern' or 'Classic')</li>\n  126  \t\t\t<li>The Calendar first weekday ('Sunday' or 'Monday')</li>\n  ...\n  130  \n  131  \t\t<ol>\n  132: \t\t\t<li>config.php: the Control Panel Configuration</li>\n  133: \t\t\t<li>func_events.php: the Control Panel functions</li>\n  134  \t\t\t<li>headerAdmin.php: it's included when you are loged as the admin</li>\n  135  \t\t</ol>\n\nC:\\xampp\\htdocs\\agenda\\docs\\INSTRUCTIONS - READ ME.txt:\n   11  You must know:\n   12  \n   13: Admin control panel: \"/calendar/admin\"\n   14  Main calendar: \"calendar.php\"\n   15  \n\nC:\\xampp\\htdocs\\agenda\\Ex_ecalendar\\calendar\\install.php:\n  152  \t\t\t\t\t\t\t\t<label class=\"col-sm-3 control-label\" for=\"inputUser\">Username</label>\n  153  \t\t\t\t\t\t\t\t<div class=\"col-sm-7\">\n  154: \t\t\t\t\t\t\t\t\t<input type=\"text\" class=\"form-control\" name=\"admin_user\" id=\"inputUser\" placeholder=\"The username you will use to enter the control panel\" autocomplete=\"off\" />\n  155  \t\t\t\t\t\t\t\t</div>\n  156  \t\t\t\t\t\t\t</div>\n  ...\n  158  \t\t\t\t\t\t\t\t<label class=\"col-sm-3 control-label\" for=\"inputPass\">Password</label>\n  159  \t\t\t\t\t\t\t\t<div class=\"col-sm-7\">\n  160: \t\t\t\t\t\t\t\t\t<input type=\"password\" class=\"form-control\" name=\"admin_pass\" placeholder=\"The password you will use to enter the control panel\" id=\"inputPass\" />\n  161  \t\t\t\t\t\t\t\t</div>\n  162  \t\t\t\t\t\t\t</div>\n\nC:\\xampp\\htdocs\\agenda\\Ex_ecalendar\\calendar\\admin\\index.php:\n   11  <html>\n   12  \t<head>\n   13: \t<title>eCalendar - Control panel</title>\n   14  \t<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n   15  \t<meta charset=\"utf-8\">\n\nC:\\xampp\\htdocs\\agenda\\Ex_ecalendar\\calendar\\admin\\login.php:\n   37          <div class=\"container\">\n   38              <div class=\"box\">\n   39:                 <header>Control Panel</header>\n   40                  <section>\n   41                      <form action=\"\" method=\"post\">\n\nC:\\xampp\\htdocs\\agenda\\Ex_ecalendar\\calendar\\admin\\php\\headerAdmin.php:\n    2  \t<h2 style=\"float: left; color: #FFF; margin: 0; font-size: 20px; font-weight: 200; line-height: 50px; margin-left: 20px;\">eCalendar</h2>\n    3  \t<div class=\"control-panel\">\n    4: \t\t<a class=\"btn\" href=\"calendar/admin\">Control Panel</a>\n    5  \t\t<input type=\"hidden\" id=\"admin\" value=\"true\" />\n    6  \t</div>\n\nC:\\xampp\\htdocs\\agenda\\Ex_ecalendar\\docs\\index.html:\n  122  \t\t<ul>\n  123  \t\t\t<li>The Database Connection (DB Host, DB Name, etc)</li>\n  124: \t\t\t<li>Your Admin Account to log into the Calendar's Control Panel</li>\n  125  \t\t\t<li>The Calendar style ('Modern' or 'Classic')</li>\n  126  \t\t\t<li>The Calendar first weekday ('Sunday' or 'Monday')</li>\n  ...\n  130  \n  131  \t\t<ol>\n  132: \t\t\t<li>config.php: the Control Panel Configuration</li>\n  133: \t\t\t<li>func_events.php: the Control Panel functions</li>\n  134  \t\t\t<li>headerAdmin.php: it's included when you are loged as the admin</li>\n  135  \t\t</ol>\n\nC:\\xampp\\htdocs\\agenda\\Ex_ecalendar\\docs\\INSTRUCTIONS - READ ME.txt:\n   11  You must know:\n   12  \n   13: Admin control panel: \"/calendar/admin\"\n   14  Main calendar: \"calendar.php\"\n   15  \n\n19 matches across 12 files\n\n\nSearching 395 files for \"Control Panel\"\n\nC:\\xampp\\htdocs\\agenda\\calendar\\install.php:\n  152  \t\t\t\t\t\t\t\t<label class=\"col-sm-3 control-label\" for=\"inputUser\">Username</label>\n  153  \t\t\t\t\t\t\t\t<div class=\"col-sm-7\">\n  154: \t\t\t\t\t\t\t\t\t<input type=\"text\" class=\"form-control\" name=\"admin_user\" id=\"inputUser\" placeholder=\"The username you will use to enter the control panel\" autocomplete=\"off\" />\n  155  \t\t\t\t\t\t\t\t</div>\n  156  \t\t\t\t\t\t\t</div>\n  ...\n  158  \t\t\t\t\t\t\t\t<label class=\"col-sm-3 control-label\" for=\"inputPass\">Password</label>\n  159  \t\t\t\t\t\t\t\t<div class=\"col-sm-7\">\n  160: \t\t\t\t\t\t\t\t\t<input type=\"password\" class=\"form-control\" name=\"admin_pass\" placeholder=\"The password you will use to enter the control panel\" id=\"inputPass\" />\n  161  \t\t\t\t\t\t\t\t</div>\n  162  \t\t\t\t\t\t\t</div>\n\nC:\\xampp\\htdocs\\agenda\\calendar\\admin\\login.php:\n   37          <div class=\"container\">\n   38              <div class=\"box\">\n   39:                 <header>Control Panel</header>\n   40                  <section>\n   41                      <form action=\"\" method=\"post\">\n\nC:\\xampp\\htdocs\\agenda\\calendar\\admin\\php\\headerAdmin.php:\n    2  \t<h2 style=\"float: left; color: #FFF; margin: 0; font-size: 20px; font-weight: 200; line-height: 50px; margin-left: 20px;\">eCalendar</h2>\n    3  \t<div class=\"control-panel\">\n    4: \t\t<a class=\"btn\" href=\"calendar/admin\">Control Panel</a>\n    5  \t\t<input type=\"hidden\" id=\"admin\" value=\"true\" />\n    6  \t</div>\n\nC:\\xampp\\htdocs\\agenda\\docs\\index.html:\n  122  \t\t<ul>\n  123  \t\t\t<li>The Database Connection (DB Host, DB Name, etc)</li>\n  124: \t\t\t<li>Your Admin Account to log into the Calendar's Control Panel</li>\n  125  \t\t\t<li>The Calendar style ('Modern' or 'Classic')</li>\n  126  \t\t\t<li>The Calendar first weekday ('Sunday' or 'Monday')</li>\n  ...\n  130  \n  131  \t\t<ol>\n  132: \t\t\t<li>config.php: the Control Panel Configuration</li>\n  133: \t\t\t<li>func_events.php: the Control Panel functions</li>\n  134  \t\t\t<li>headerAdmin.php: it's included when you are loged as the admin</li>\n  135  \t\t</ol>\n\nC:\\xampp\\htdocs\\agenda\\docs\\INSTRUCTIONS - READ ME.txt:\n   11  You must know:\n   12  \n   13: Admin control panel: \"/calendar/admin\"\n   14  Main calendar: \"calendar.php\"\n   15  \n\nC:\\xampp\\htdocs\\agenda\\Ex_ecalendar\\calendar\\install.php:\n  152  \t\t\t\t\t\t\t\t<label class=\"col-sm-3 control-label\" for=\"inputUser\">Username</label>\n  153  \t\t\t\t\t\t\t\t<div class=\"col-sm-7\">\n  154: \t\t\t\t\t\t\t\t\t<input type=\"text\" class=\"form-control\" name=\"admin_user\" id=\"inputUser\" placeholder=\"The username you will use to enter the control panel\" autocomplete=\"off\" />\n  155  \t\t\t\t\t\t\t\t</div>\n  156  \t\t\t\t\t\t\t</div>\n  ...\n  158  \t\t\t\t\t\t\t\t<label class=\"col-sm-3 control-label\" for=\"inputPass\">Password</label>\n  159  \t\t\t\t\t\t\t\t<div class=\"col-sm-7\">\n  160: \t\t\t\t\t\t\t\t\t<input type=\"password\" class=\"form-control\" name=\"admin_pass\" placeholder=\"The password you will use to enter the control panel\" id=\"inputPass\" />\n  161  \t\t\t\t\t\t\t\t</div>\n  162  \t\t\t\t\t\t\t</div>\n\nC:\\xampp\\htdocs\\agenda\\Ex_ecalendar\\calendar\\admin\\index.php:\n   11  <html>\n   12  \t<head>\n   13: \t<title>eCalendar - Control panel</title>\n   14  \t<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n   15  \t<meta charset=\"utf-8\">\n\nC:\\xampp\\htdocs\\agenda\\Ex_ecalendar\\calendar\\admin\\login.php:\n   37          <div class=\"container\">\n   38              <div class=\"box\">\n   39:                 <header>Control Panel</header>\n   40                  <section>\n   41                      <form action=\"\" method=\"post\">\n\nC:\\xampp\\htdocs\\agenda\\Ex_ecalendar\\calendar\\admin\\php\\headerAdmin.php:\n    2  \t<h2 style=\"float: left; color: #FFF; margin: 0; font-size: 20px; font-weight: 200; line-height: 50px; margin-left: 20px;\">eCalendar</h2>\n    3  \t<div class=\"control-panel\">\n    4: \t\t<a class=\"btn\" href=\"calendar/admin\">Control Panel</a>\n    5  \t\t<input type=\"hidden\" id=\"admin\" value=\"true\" />\n    6  \t</div>\n\nC:\\xampp\\htdocs\\agenda\\Ex_ecalendar\\docs\\index.html:\n  122  \t\t<ul>\n  123  \t\t\t<li>The Database Connection (DB Host, DB Name, etc)</li>\n  124: \t\t\t<li>Your Admin Account to log into the Calendar's Control Panel</li>\n  125  \t\t\t<li>The Calendar style ('Modern' or 'Classic')</li>\n  126  \t\t\t<li>The Calendar first weekday ('Sunday' or 'Monday')</li>\n  ...\n  130  \n  131  \t\t<ol>\n  132: \t\t\t<li>config.php: the Control Panel Configuration</li>\n  133: \t\t\t<li>func_events.php: the Control Panel functions</li>\n  134  \t\t\t<li>headerAdmin.php: it's included when you are loged as the admin</li>\n  135  \t\t</ol>\n\nC:\\xampp\\htdocs\\agenda\\Ex_ecalendar\\docs\\INSTRUCTIONS - READ ME.txt:\n   11  You must know:\n   12  \n   13: Admin control panel: \"/calendar/admin\"\n   14  Main calendar: \"calendar.php\"\n   15  \n\n17 matches across 11 files\n\n\nSearching 395 files for \"Control Panel\"\n\nC:\\xampp\\htdocs\\agenda\\calendar\\install.php:\n  152  \t\t\t\t\t\t\t\t<label class=\"col-sm-3 control-label\" for=\"inputUser\">Username</label>\n  153  \t\t\t\t\t\t\t\t<div class=\"col-sm-7\">\n  154: \t\t\t\t\t\t\t\t\t<input type=\"text\" class=\"form-control\" name=\"admin_user\" id=\"inputUser\" placeholder=\"The username you will use to enter the control panel\" autocomplete=\"off\" />\n  155  \t\t\t\t\t\t\t\t</div>\n  156  \t\t\t\t\t\t\t</div>\n  ...\n  158  \t\t\t\t\t\t\t\t<label class=\"col-sm-3 control-label\" for=\"inputPass\">Password</label>\n  159  \t\t\t\t\t\t\t\t<div class=\"col-sm-7\">\n  160: \t\t\t\t\t\t\t\t\t<input type=\"password\" class=\"form-control\" name=\"admin_pass\" placeholder=\"The password you will use to enter the control panel\" id=\"inputPass\" />\n  161  \t\t\t\t\t\t\t\t</div>\n  162  \t\t\t\t\t\t\t</div>\n\nC:\\xampp\\htdocs\\agenda\\calendar\\admin\\php\\headerAdmin.php:\n    2  \t<h2 style=\"float: left; color: #FFF; margin: 0; font-size: 20px; font-weight: 200; line-height: 50px; margin-left: 20px;\">eCalendar</h2>\n    3  \t<div class=\"control-panel\">\n    4: \t\t<a class=\"btn\" href=\"calendar/admin\">Control Panel</a>\n    5  \t\t<input type=\"hidden\" id=\"admin\" value=\"true\" />\n    6  \t</div>\n\nC:\\xampp\\htdocs\\agenda\\docs\\index.html:\n  122  \t\t<ul>\n  123  \t\t\t<li>The Database Connection (DB Host, DB Name, etc)</li>\n  124: \t\t\t<li>Your Admin Account to log into the Calendar's Control Panel</li>\n  125  \t\t\t<li>The Calendar style ('Modern' or 'Classic')</li>\n  126  \t\t\t<li>The Calendar first weekday ('Sunday' or 'Monday')</li>\n  ...\n  130  \n  131  \t\t<ol>\n  132: \t\t\t<li>config.php: the Control Panel Configuration</li>\n  133: \t\t\t<li>func_events.php: the Control Panel functions</li>\n  134  \t\t\t<li>headerAdmin.php: it's included when you are loged as the admin</li>\n  135  \t\t</ol>\n\nC:\\xampp\\htdocs\\agenda\\docs\\INSTRUCTIONS - READ ME.txt:\n   11  You must know:\n   12  \n   13: Admin control panel: \"/calendar/admin\"\n   14  Main calendar: \"calendar.php\"\n   15  \n\nC:\\xampp\\htdocs\\agenda\\Ex_ecalendar\\calendar\\install.php:\n  152  \t\t\t\t\t\t\t\t<label class=\"col-sm-3 control-label\" for=\"inputUser\">Username</label>\n  153  \t\t\t\t\t\t\t\t<div class=\"col-sm-7\">\n  154: \t\t\t\t\t\t\t\t\t<input type=\"text\" class=\"form-control\" name=\"admin_user\" id=\"inputUser\" placeholder=\"The username you will use to enter the control panel\" autocomplete=\"off\" />\n  155  \t\t\t\t\t\t\t\t</div>\n  156  \t\t\t\t\t\t\t</div>\n  ...\n  158  \t\t\t\t\t\t\t\t<label class=\"col-sm-3 control-label\" for=\"inputPass\">Password</label>\n  159  \t\t\t\t\t\t\t\t<div class=\"col-sm-7\">\n  160: \t\t\t\t\t\t\t\t\t<input type=\"password\" class=\"form-control\" name=\"admin_pass\" placeholder=\"The password you will use to enter the control panel\" id=\"inputPass\" />\n  161  \t\t\t\t\t\t\t\t</div>\n  162  \t\t\t\t\t\t\t</div>\n\nC:\\xampp\\htdocs\\agenda\\Ex_ecalendar\\calendar\\admin\\index.php:\n   11  <html>\n   12  \t<head>\n   13: \t<title>eCalendar - Control panel</title>\n   14  \t<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n   15  \t<meta charset=\"utf-8\">\n\nC:\\xampp\\htdocs\\agenda\\Ex_ecalendar\\calendar\\admin\\login.php:\n   37          <div class=\"container\">\n   38              <div class=\"box\">\n   39:                 <header>Control Panel</header>\n   40                  <section>\n   41                      <form action=\"\" method=\"post\">\n\nC:\\xampp\\htdocs\\agenda\\Ex_ecalendar\\calendar\\admin\\php\\headerAdmin.php:\n    2  \t<h2 style=\"float: left; color: #FFF; margin: 0; font-size: 20px; font-weight: 200; line-height: 50px; margin-left: 20px;\">eCalendar</h2>\n    3  \t<div class=\"control-panel\">\n    4: \t\t<a class=\"btn\" href=\"calendar/admin\">Control Panel</a>\n    5  \t\t<input type=\"hidden\" id=\"admin\" value=\"true\" />\n    6  \t</div>\n\nC:\\xampp\\htdocs\\agenda\\Ex_ecalendar\\docs\\index.html:\n  122  \t\t<ul>\n  123  \t\t\t<li>The Database Connection (DB Host, DB Name, etc)</li>\n  124: \t\t\t<li>Your Admin Account to log into the Calendar's Control Panel</li>\n  125  \t\t\t<li>The Calendar style ('Modern' or 'Classic')</li>\n  126  \t\t\t<li>The Calendar first weekday ('Sunday' or 'Monday')</li>\n  ...\n  130  \n  131  \t\t<ol>\n  132: \t\t\t<li>config.php: the Control Panel Configuration</li>\n  133: \t\t\t<li>func_events.php: the Control Panel functions</li>\n  134  \t\t\t<li>headerAdmin.php: it's included when you are loged as the admin</li>\n  135  \t\t</ol>\n\nC:\\xampp\\htdocs\\agenda\\Ex_ecalendar\\docs\\INSTRUCTIONS - READ ME.txt:\n   11  You must know:\n   12  \n   13: Admin control panel: \"/calendar/admin\"\n   14  Main calendar: \"calendar.php\"\n   15  \n\n16 matches across 10 files\n\n\nSearching 395 files for \"Control Panel\"\n\nC:\\xampp\\htdocs\\agenda\\calendar\\install.php:\n  152  \t\t\t\t\t\t\t\t<label class=\"col-sm-3 control-label\" for=\"inputUser\">Username</label>\n  153  \t\t\t\t\t\t\t\t<div class=\"col-sm-7\">\n  154: \t\t\t\t\t\t\t\t\t<input type=\"text\" class=\"form-control\" name=\"admin_user\" id=\"inputUser\" placeholder=\"The username you will use to enter the control panel\" autocomplete=\"off\" />\n  155  \t\t\t\t\t\t\t\t</div>\n  156  \t\t\t\t\t\t\t</div>\n  ...\n  158  \t\t\t\t\t\t\t\t<label class=\"col-sm-3 control-label\" for=\"inputPass\">Password</label>\n  159  \t\t\t\t\t\t\t\t<div class=\"col-sm-7\">\n  160: \t\t\t\t\t\t\t\t\t<input type=\"password\" class=\"form-control\" name=\"admin_pass\" placeholder=\"The password you will use to enter the control panel\" id=\"inputPass\" />\n  161  \t\t\t\t\t\t\t\t</div>\n  162  \t\t\t\t\t\t\t</div>\n\nC:\\xampp\\htdocs\\agenda\\docs\\index.html:\n  122  \t\t<ul>\n  123  \t\t\t<li>The Database Connection (DB Host, DB Name, etc)</li>\n  124: \t\t\t<li>Your Admin Account to log into the Calendar's Control Panel</li>\n  125  \t\t\t<li>The Calendar style ('Modern' or 'Classic')</li>\n  126  \t\t\t<li>The Calendar first weekday ('Sunday' or 'Monday')</li>\n  ...\n  130  \n  131  \t\t<ol>\n  132: \t\t\t<li>config.php: the Control Panel Configuration</li>\n  133: \t\t\t<li>func_events.php: the Control Panel functions</li>\n  134  \t\t\t<li>headerAdmin.php: it's included when you are loged as the admin</li>\n  135  \t\t</ol>\n\nC:\\xampp\\htdocs\\agenda\\docs\\INSTRUCTIONS - READ ME.txt:\n   11  You must know:\n   12  \n   13: Admin control panel: \"/calendar/admin\"\n   14  Main calendar: \"calendar.php\"\n   15  \n\nC:\\xampp\\htdocs\\agenda\\Ex_ecalendar\\calendar\\install.php:\n  152  \t\t\t\t\t\t\t\t<label class=\"col-sm-3 control-label\" for=\"inputUser\">Username</label>\n  153  \t\t\t\t\t\t\t\t<div class=\"col-sm-7\">\n  154: \t\t\t\t\t\t\t\t\t<input type=\"text\" class=\"form-control\" name=\"admin_user\" id=\"inputUser\" placeholder=\"The username you will use to enter the control panel\" autocomplete=\"off\" />\n  155  \t\t\t\t\t\t\t\t</div>\n  156  \t\t\t\t\t\t\t</div>\n  ...\n  158  \t\t\t\t\t\t\t\t<label class=\"col-sm-3 control-label\" for=\"inputPass\">Password</label>\n  159  \t\t\t\t\t\t\t\t<div class=\"col-sm-7\">\n  160: \t\t\t\t\t\t\t\t\t<input type=\"password\" class=\"form-control\" name=\"admin_pass\" placeholder=\"The password you will use to enter the control panel\" id=\"inputPass\" />\n  161  \t\t\t\t\t\t\t\t</div>\n  162  \t\t\t\t\t\t\t</div>\n\nC:\\xampp\\htdocs\\agenda\\Ex_ecalendar\\calendar\\admin\\index.php:\n   11  <html>\n   12  \t<head>\n   13: \t<title>eCalendar - Control panel</title>\n   14  \t<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n   15  \t<meta charset=\"utf-8\">\n\nC:\\xampp\\htdocs\\agenda\\Ex_ecalendar\\calendar\\admin\\login.php:\n   37          <div class=\"container\">\n   38              <div class=\"box\">\n   39:                 <header>Control Panel</header>\n   40                  <section>\n   41                      <form action=\"\" method=\"post\">\n\nC:\\xampp\\htdocs\\agenda\\Ex_ecalendar\\calendar\\admin\\php\\headerAdmin.php:\n    2  \t<h2 style=\"float: left; color: #FFF; margin: 0; font-size: 20px; font-weight: 200; line-height: 50px; margin-left: 20px;\">eCalendar</h2>\n    3  \t<div class=\"control-panel\">\n    4: \t\t<a class=\"btn\" href=\"calendar/admin\">Control Panel</a>\n    5  \t\t<input type=\"hidden\" id=\"admin\" value=\"true\" />\n    6  \t</div>\n\nC:\\xampp\\htdocs\\agenda\\Ex_ecalendar\\docs\\index.html:\n  122  \t\t<ul>\n  123  \t\t\t<li>The Database Connection (DB Host, DB Name, etc)</li>\n  124: \t\t\t<li>Your Admin Account to log into the Calendar's Control Panel</li>\n  125  \t\t\t<li>The Calendar style ('Modern' or 'Classic')</li>\n  126  \t\t\t<li>The Calendar first weekday ('Sunday' or 'Monday')</li>\n  ...\n  130  \n  131  \t\t<ol>\n  132: \t\t\t<li>config.php: the Control Panel Configuration</li>\n  133: \t\t\t<li>func_events.php: the Control Panel functions</li>\n  134  \t\t\t<li>headerAdmin.php: it's included when you are loged as the admin</li>\n  135  \t\t</ol>\n\nC:\\xampp\\htdocs\\agenda\\Ex_ecalendar\\docs\\INSTRUCTIONS - READ ME.txt:\n   11  You must know:\n   12  \n   13: Admin control panel: \"/calendar/admin\"\n   14  Main calendar: \"calendar.php\"\n   15  \n\n15 matches across 9 files\n\n\nSearching 395 files for \"Control Panel\"\n\nC:\\xampp\\htdocs\\agenda\\calendar\\install.php:\n  152  \t\t\t\t\t\t\t\t<label class=\"col-sm-3 control-label\" for=\"inputUser\">Username</label>\n  153  \t\t\t\t\t\t\t\t<div class=\"col-sm-7\">\n  154: \t\t\t\t\t\t\t\t\t<input type=\"text\" class=\"form-control\" name=\"admin_user\" id=\"inputUser\" placeholder=\"The username you will use to enter the control panel\" autocomplete=\"off\" />\n  155  \t\t\t\t\t\t\t\t</div>\n  156  \t\t\t\t\t\t\t</div>\n  ...\n  158  \t\t\t\t\t\t\t\t<label class=\"col-sm-3 control-label\" for=\"inputPass\">Password</label>\n  159  \t\t\t\t\t\t\t\t<div class=\"col-sm-7\">\n  160: \t\t\t\t\t\t\t\t\t<input type=\"password\" class=\"form-control\" name=\"admin_pass\" placeholder=\"The password you will use to enter the control panel\" id=\"inputPass\" />\n  161  \t\t\t\t\t\t\t\t</div>\n  162  \t\t\t\t\t\t\t</div>\n\nC:\\xampp\\htdocs\\agenda\\docs\\index.html:\n  122  \t\t<ul>\n  123  \t\t\t<li>The Database Connection (DB Host, DB Name, etc)</li>\n  124: \t\t\t<li>Your Admin Account to log into the Calendar's Control Panel</li>\n  125  \t\t\t<li>The Calendar style ('Modern' or 'Classic')</li>\n  126  \t\t\t<li>The Calendar first weekday ('Sunday' or 'Monday')</li>\n  ...\n  130  \n  131  \t\t<ol>\n  132: \t\t\t<li>config.php: the Control Panel Configuration</li>\n  133: \t\t\t<li>func_events.php: the Control Panel functions</li>\n  134  \t\t\t<li>headerAdmin.php: it's included when you are loged as the admin</li>\n  135  \t\t</ol>\n\nC:\\xampp\\htdocs\\agenda\\docs\\INSTRUCTIONS - READ ME.txt:\n   11  You must know:\n   12  \n   13: Admin control panel: \"/calendar/admin\"\n   14  Main calendar: \"calendar.php\"\n   15  \n\nC:\\xampp\\htdocs\\agenda\\Ex_ecalendar\\calendar\\install.php:\n  152  \t\t\t\t\t\t\t\t<label class=\"col-sm-3 control-label\" for=\"inputUser\">Username</label>\n  153  \t\t\t\t\t\t\t\t<div class=\"col-sm-7\">\n  154: \t\t\t\t\t\t\t\t\t<input type=\"text\" class=\"form-control\" name=\"admin_user\" id=\"inputUser\" placeholder=\"The username you will use to enter the control panel\" autocomplete=\"off\" />\n  155  \t\t\t\t\t\t\t\t</div>\n  156  \t\t\t\t\t\t\t</div>\n  ...\n  158  \t\t\t\t\t\t\t\t<label class=\"col-sm-3 control-label\" for=\"inputPass\">Password</label>\n  159  \t\t\t\t\t\t\t\t<div class=\"col-sm-7\">\n  160: \t\t\t\t\t\t\t\t\t<input type=\"password\" class=\"form-control\" name=\"admin_pass\" placeholder=\"The password you will use to enter the control panel\" id=\"inputPass\" />\n  161  \t\t\t\t\t\t\t\t</div>\n  162  \t\t\t\t\t\t\t</div>\n\nC:\\xampp\\htdocs\\agenda\\Ex_ecalendar\\calendar\\admin\\login.php:\n   37          <div class=\"container\">\n   38              <div class=\"box\">\n   39:                 <header>Control Panel</header>\n   40                  <section>\n   41                      <form action=\"\" method=\"post\">\n\nC:\\xampp\\htdocs\\agenda\\Ex_ecalendar\\calendar\\admin\\php\\headerAdmin.php:\n    2  \t<h2 style=\"float: left; color: #FFF; margin: 0; font-size: 20px; font-weight: 200; line-height: 50px; margin-left: 20px;\">eCalendar</h2>\n    3  \t<div class=\"control-panel\">\n    4: \t\t<a class=\"btn\" href=\"calendar/admin\">Control Panel</a>\n    5  \t\t<input type=\"hidden\" id=\"admin\" value=\"true\" />\n    6  \t</div>\n\nC:\\xampp\\htdocs\\agenda\\Ex_ecalendar\\docs\\index.html:\n  122  \t\t<ul>\n  123  \t\t\t<li>The Database Connection (DB Host, DB Name, etc)</li>\n  124: \t\t\t<li>Your Admin Account to log into the Calendar's Control Panel</li>\n  125  \t\t\t<li>The Calendar style ('Modern' or 'Classic')</li>\n  126  \t\t\t<li>The Calendar first weekday ('Sunday' or 'Monday')</li>\n  ...\n  130  \n  131  \t\t<ol>\n  132: \t\t\t<li>config.php: the Control Panel Configuration</li>\n  133: \t\t\t<li>func_events.php: the Control Panel functions</li>\n  134  \t\t\t<li>headerAdmin.php: it's included when you are loged as the admin</li>\n  135  \t\t</ol>\n\nC:\\xampp\\htdocs\\agenda\\Ex_ecalendar\\docs\\INSTRUCTIONS - READ ME.txt:\n   11  You must know:\n   12  \n   13: Admin control panel: \"/calendar/admin\"\n   14  Main calendar: \"calendar.php\"\n   15  \n\n14 matches across 8 files\n\n\nSearching 395 files for \"Control Panel\"\n\nC:\\xampp\\htdocs\\agenda\\calendar\\install.php:\n  152  \t\t\t\t\t\t\t\t<label class=\"col-sm-3 control-label\" for=\"inputUser\">Username</label>\n  153  \t\t\t\t\t\t\t\t<div class=\"col-sm-7\">\n  154: \t\t\t\t\t\t\t\t\t<input type=\"text\" class=\"form-control\" name=\"admin_user\" id=\"inputUser\" placeholder=\"The username you will use to enter the control panel\" autocomplete=\"off\" />\n  155  \t\t\t\t\t\t\t\t</div>\n  156  \t\t\t\t\t\t\t</div>\n  ...\n  158  \t\t\t\t\t\t\t\t<label class=\"col-sm-3 control-label\" for=\"inputPass\">Password</label>\n  159  \t\t\t\t\t\t\t\t<div class=\"col-sm-7\">\n  160: \t\t\t\t\t\t\t\t\t<input type=\"password\" class=\"form-control\" name=\"admin_pass\" placeholder=\"The password you will use to enter the control panel\" id=\"inputPass\" />\n  161  \t\t\t\t\t\t\t\t</div>\n  162  \t\t\t\t\t\t\t</div>\n\nC:\\xampp\\htdocs\\agenda\\docs\\index.html:\n  122  \t\t<ul>\n  123  \t\t\t<li>The Database Connection (DB Host, DB Name, etc)</li>\n  124: \t\t\t<li>Your Admin Account to log into the Calendar's Control Panel</li>\n  125  \t\t\t<li>The Calendar style ('Modern' or 'Classic')</li>\n  126  \t\t\t<li>The Calendar first weekday ('Sunday' or 'Monday')</li>\n  ...\n  130  \n  131  \t\t<ol>\n  132: \t\t\t<li>config.php: the Control Panel Configuration</li>\n  133: \t\t\t<li>func_events.php: the Control Panel functions</li>\n  134  \t\t\t<li>headerAdmin.php: it's included when you are loged as the admin</li>\n  135  \t\t</ol>\n\nC:\\xampp\\htdocs\\agenda\\docs\\INSTRUCTIONS - READ ME.txt:\n   11  You must know:\n   12  \n   13: Admin control panel: \"/calendar/admin\"\n   14  Main calendar: \"calendar.php\"\n   15  \n\nC:\\xampp\\htdocs\\agenda\\Ex_ecalendar\\calendar\\install.php:\n  152  \t\t\t\t\t\t\t\t<label class=\"col-sm-3 control-label\" for=\"inputUser\">Username</label>\n  153  \t\t\t\t\t\t\t\t<div class=\"col-sm-7\">\n  154: \t\t\t\t\t\t\t\t\t<input type=\"text\" class=\"form-control\" name=\"admin_user\" id=\"inputUser\" placeholder=\"The username you will use to enter the control panel\" autocomplete=\"off\" />\n  155  \t\t\t\t\t\t\t\t</div>\n  156  \t\t\t\t\t\t\t</div>\n  ...\n  158  \t\t\t\t\t\t\t\t<label class=\"col-sm-3 control-label\" for=\"inputPass\">Password</label>\n  159  \t\t\t\t\t\t\t\t<div class=\"col-sm-7\">\n  160: \t\t\t\t\t\t\t\t\t<input type=\"password\" class=\"form-control\" name=\"admin_pass\" placeholder=\"The password you will use to enter the control panel\" id=\"inputPass\" />\n  161  \t\t\t\t\t\t\t\t</div>\n  162  \t\t\t\t\t\t\t</div>\n\nC:\\xampp\\htdocs\\agenda\\Ex_ecalendar\\calendar\\admin\\login.php:\n   37          <div class=\"container\">\n   38              <div class=\"box\">\n   39:                 <header>Control Panel</header>\n   40                  <section>\n   41                      <form action=\"\" method=\"post\">\n\nC:\\xampp\\htdocs\\agenda\\Ex_ecalendar\\docs\\index.html:\n  122  \t\t<ul>\n  123  \t\t\t<li>The Database Connection (DB Host, DB Name, etc)</li>\n  124: \t\t\t<li>Your Admin Account to log into the Calendar's Control Panel</li>\n  125  \t\t\t<li>The Calendar style ('Modern' or 'Classic')</li>\n  126  \t\t\t<li>The Calendar first weekday ('Sunday' or 'Monday')</li>\n  ...\n  130  \n  131  \t\t<ol>\n  132: \t\t\t<li>config.php: the Control Panel Configuration</li>\n  133: \t\t\t<li>func_events.php: the Control Panel functions</li>\n  134  \t\t\t<li>headerAdmin.php: it's included when you are loged as the admin</li>\n  135  \t\t</ol>\n\nC:\\xampp\\htdocs\\agenda\\Ex_ecalendar\\docs\\INSTRUCTIONS - READ ME.txt:\n   11  You must know:\n   12  \n   13: Admin control panel: \"/calendar/admin\"\n   14  Main calendar: \"calendar.php\"\n   15  \n\n13 matches across 7 files\n",
-			"settings":
-			{
-				"buffer_size": 25520,
-				"line_ending": "Windows",
-				"name": "Find Results",
-				"scratch": true
-			}
-		},
-		{
-			"file": "Ex_ecalendar/calendar/admin/login.php",
-			"settings":
-			{
-				"buffer_size": 1519,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "Ex_ecalendar/calendar/admin/php/headerAdmin.php",
-			"settings":
-			{
-				"buffer_size": 741,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "calendar/admin/php/headerAdmin.php",
-			"settings":
-			{
-				"buffer_size": 732,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
 			"file": "calendar/admin/login.php",
 			"settings":
 			{
-				"buffer_size": 1512,
+				"buffer_size": 1533,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"contents": "var loading = \"<td colspan='4' style='text-align: center; padding: 50px 0px;'>Carregando agendamentos...</td>\";\nvar not_found = \"<td colspan='4' style='text-align: center; padding: 50px 0px;'>Nenhum agendamento encontrado</td>\";\n\nvar modal_original = { header: $(\".modal-header\").html(),\n\t\t\t\t\t\t body: $(\".modal-body\").html(),\n\t\t\t\t\t\t footer: $(\".modal-footer\").html() };\n\nvar ySelected, mSelected;\n\n$(function() {\n\ttbody = $(\"tbody\");\n\ttime_format = $(\"#timeFormat\").val();\n\n\tloadTable();\n\n\t$(\"#config\").on(\"click\", function() {\n\t\t$(\"#section\").load(\"./php/config.php\");\n\t});\n\n\t$(\"button.add\").on(\"click\", function() {\n\t\t$(\".modal-header\").html(modal_original.header);\n\t\t$(\".modal-body\").html(modal_original.body);\n\t\t$(\".modal-footer\").html(modal_original.footer);\n\n\t\t$(\"#inputDate\").datepicker({ firstDay: 1 });\n\n\t\tif (time_format == \"standard\") {\n\t\t\t$(\"#inputTime\").timepicker({\n\t\t\t\ttimeFormat: 'hh:mm tt'\n\t\t\t});\n\t\t}\n\t\telse {\n\t\t\t$(\"#inputTime\").timepicker();\n\t\t}\n\n\t\t$(\"button#add\").on(\"click\", function() {\n\t\t\tform = { title: $(\"#inputTitle\").val(),\n\t\t\t\t\t location: $(\"#inputLocation\").val(),\n\t\t\t\t\t date: $(\"#inputDate\").val(),\n\t\t\t\t\t time: $(\"#inputTime\").val() };\n\n\t\t\ttitle = form.title;\n\t\t\tloc = form.location;\n\t\t\tdate = new Date(form.date);\n\t\t\tdate = date.getFullYear() + \"-\" +\n\t\t\t\t   (date.getMonth() + 1 < 10 ? \"0\" + (date.getMonth() + 1) : date.getMonth() + 1) + \"-\" +\n\t\t\t\t   (date.getDate() < 10 ? \"0\" + date.getDate() : date.getDate());\n\t\t\ttime = form.time;\n\t\t\t\n\t\t\tif (time_format == \"standard\") {\n\n\t\t\t\tif (time.indexOf(\"am\") > -1) {\n\t\t\t\t\t\n\t\t\t\t\ttime = form.time.split(\" \")[0];\n\t\t\t\t\toriginal = time.split(\":\");\n\t\t\t\t\t\n\t\t\t\t\tif (parseInt(original[0]) == 12) {\n\t\t\t\t\t\ttime = \"00:\" + original[1];\n\t\t\t\t\t}\n\t\t\t\t}\n\t\t\t\telse {\n\t\t\t\t\ttime = form.time.split(\" \")[0];\n\t\t\t\t\toriginal = time.split(\":\");\n\n\t\t\t\t\tif (parseInt(original[0]) != 12) {\n\t\t\t\t\t\ttimePm = parseInt(original[0]) + 12;\n\t\t\t\t\t\ttime = timePm + \":\" + original[1];\n\t\t\t\t\t}\n\t\t\t\t}\n\t\t\t}\n\n\t\t\ttimestamp = date + \" \" + time;\n\t\t\tconsole.log(timestamp);\n\n\t\t\tif ((title && loc && form.date && form.time) != '') {\n\t\t\t\tform_data = { 1: title, 2: loc, 3: timestamp };\n\t\t\t\taddEvent(form_data);\n\t\t\t}\n\t\t\telse {\n\t\t\t\talert(\"There must be something wrong. Check the information and try again.\");\n\t\t\t}\n\t\t});\n\t});\n\n\t$(\"#myModal\").on(\"hidden.bs.modal\", function () {\n\t\t$(\"td\").removeClass(\"active\");\n\t});\n\n\tvar years = new Date().getFullYear();\n\tvar months = [\"\", \"January\", \"February\", \"March\", \"April\", \"May\", \"June\", \"July\", \"August\", \"September\", \"October\", \"November\", \"December\"];\n\t\n\tfor (i = years - 5; i <= years + 5; i++) {\n\t\t$(\".searchbox\").find(\".sortYear .dropdown-menu\").append(\"<li><a href='javascript:void(0)' id='\" + i + \"'>\" + i + \"</a></li>\");\n\t}\n\t\n\tfor (i = 1; i <= months.length - 1; i++) {\n\t\t$(\".searchbox\").find(\".sortMonth .dropdown-menu\").append(\"<li><a href='javascript:void(0)' id='\" + i + \"'>\" + months[i] + \"</a></li>\");\n\t}\n\n\t$(\".searchbox\").delegate(\"a\", \"click\", function() {\n\t\tif ($(this).attr(\"id\") !== null && $(this).attr(\"id\").length >= 4 && $(this).attr(\"id\") !== (\"ally\" && \"allm\")) {\n\t\t\tvar this_y = parseInt($(this).attr(\"id\"));\n\t\t\tySelected = this_y;\n\t\t}\n\t\telse if ($(this).attr(\"id\") !== null && $(this).attr(\"id\").length < 3) {\n\t\t\tvar this_m = parseInt($(this).attr(\"id\"));\n\t\t\tmSelected = this_m;\n\t\t}\n\n\t\tif ($(this).attr(\"id\") === \"ally\") {\n\t\t\tthis_y = undefined;\n\t\t\tySelected = this_y;\n\t\t}\n\t\telse if ($(this).attr(\"id\") === \"allm\") {\n\t\t\tthis_m = undefined;\n\t\t\tmSelected = this_m;\n\t\t}\n\n\t\t$.ajax({\n\t\t\ttype: \"POST\",\n\t\t\tdataType: \"json\",\n\t\t\tdata: { action: \"select\", y: ySelected, m: mSelected },\n\t\t\turl: \"./php/func_events.php\",\n\t\t\tbeforeSend: function() { tbody.html(loading); },\n\t\t\tsuccess: function(data) {\n\t\t\t\tgetEventsTable(data);\n\t\t\t},\n\t\t\tcomplete: function() {\n\t\t\t\tif (this_m !== undefined) { $(\".sortMonth .dropdown-toggle\").html(months[mSelected] + \" <span class='caret'></span>\") }\n\t\t\t\t\telse if (this_y === undefined) { $(\".sortMonth .dropdown-toggle\").html(\"Month <span class='caret'></span>\") }\n\t\t\t\tif (this_y !== undefined) $(\".sortYear .dropdown-toggle\").html(ySelected + \" <span class='caret'></span>\");\n\t\t\t\t\telse if (this_m === undefined) { $(\".sortYear .dropdown-toggle\").html(\"Year <span class='caret'></span>\") }\n\t\t\t},\n\t\t\terror: function() {\n\t\t\t\ttbody.html(not_found);\n\t\t\t}\n\t\t});\n\t});\n\n\t$(\"form#search>input:text\").on(\"keyup\", function() {\n\t\tsearch_q = $(this).serializeArray();\n\t\tsearch(search_q);\n\t});\n\n\t$(\"form#search\").on(\"submit\", function() {\n\t\t$(this).find(\"input[type='text']\").blur();\n\n\t\tsearch_q = $(this).serializeArray();\n\t\tsearch(search_q);\n\t});\n\n\t$(\"#reverseList\").on(\"click\", function () { // Date.onclick function\n\t\tif (!$(this).children(\"span\").hasClass('caret-reversed')) {\n\t\t\t$(this).children(\"span\").addClass(\"caret-reversed\");\n\t\t} else {\n\t\t\t$(this).children(\"span\").removeClass(\"caret-reversed\");\n\t\t}\n\n\t\tvar listEvents = document.getElementById(\"listEvents\");\n\t\tvar i = listEvents.childNodes.length;\n\n\t\twhile (i--)\n\t\t  listEvents.appendChild(listEvents.childNodes[i]);\n\t});\n});\n\nfunction loadTable() {\n\t$.ajax({\n\t\tdataType: \"json\",\n\t\ttype: \"POST\",\n\t\tdata: { action: \"select\" },\n\t\turl: \"./php/func_events.php\",\n\t\tbeforeSend: function() { tbody.html(loading); },\n\t\tsuccess: function(data) { getEventsTable(data); },\n\t\terror: function() {\ttbody.html(not_found); }\n\t});\n}\n\nfunction getEventsTable(data) {\n\ttbody.empty();\n\n\ttry {\n\t\tfor (i = 0; i <= data.length; i++) {\n\n\t\t\tdate = data[i].selector.split(\" \");\n\t\t\tdate = date[0] + \" \" + date[1] + \" \" + date[2];\n\n\t\t\ttime = new Date(data[i].selector);\n\n\t\t\ttime = {\n\t\t\t\thours: time.getHours(),\n\t\t\t\tminutes: time.getMinutes() < 10 ? \"0\" + time.getMinutes() : time.getMinutes(),\n\t\t\t\tampm: (time.getHours() < 12 ? \"am\" : \"pm\")\n\t\t\t}\n\n\t\t\tif (time_format == \"standard\") {\n\t\t\t\ttime.hours = (time.hours > 12) ? time.hours - 12 : time.hours;\n\n\t\t\t\ttime = time.hours + \":\" + time.minutes + time.ampm;\n\t\t\t}\n\t\t\telse if (time_format == \"military\") {\n\t\t\t\ttime = time.hours + \":\" + time.minutes;\n\t\t\t}\n\n\t\t\ttimestamp = date + \" \" + time;\n\n\t\t\tvar html = \"<tr>\" +\n\t\t\t\t\t\t\t\"<td>\" + data[i].title + \"</td>\" +\n\t\t\t\t\t\t\t\"<td>\" + data[i].location + \"</td>\" +\n\t\t\t\t\t\t\t\"<td>\" + timestamp + \"</td>\" +\n\t\t\t\t\t\t\t\"<td class='config'>\" +\n\t\t\t\t\t\t\t\t\"<div class='btn-group pull-right'>\" +\n\t\t\t\t\t\t\t\t\t\"<button href='javascript:void(0)' class='btn btn-default btn-small dropdown-toggle' data-toggle='dropdown'>\" +\n\t\t\t\t\t\t\t\t\t\t\"<span class='glyphicon glyphicon-cog'></span>\" +\n\t\t\t\t\t\t\t\t\t\"</button>\" +\n\t\t\t\t\t\t\t\t\t\"<ul class='dropdown-menu'>\" +\n\t\t\t\t\t\t\t\t\t\t\"<li>\" +\n\t\t\t\t\t\t\t\t\t\t\t\"<a class='edit' onclick=\\\"action('edit', '\" + data[i].id + \"|\" +  escapeQuotes(data[i].title) + \"|\" + escapeQuotes(data[i].location) + \"|\" + data[i].selector + \"')\\\" \" +\n\t\t\t\t\t\t\t\t\t\t\t\t\"href='#' data-toggle='modal' data-target='#myModal'>\" +\n\t\t\t\t\t\t\t\t\t\t\t\t\t\"<span class='glyphicon glyphicon-edit'></span>&nbsp;&nbsp;Edit\" +\n\t\t\t\t\t\t\t\t\t\t\t\"</a>\" +\n\t\t\t\t\t\t\t\t\t\t\"</li>\" +\n\t\t\t\t\t\t\t\t\t\t\"<li>\" +\n\t\t\t\t\t\t\t\t\t\t\t\"<a class='delete' onclick=\\\"action('del', '\" + data[i].id + \"', '\" +  escapeQuotes(data[i].title) + \"&nbsp;at&nbsp;\" + escapeQuotes(data[i].location) + \"&nbsp;on&nbsp;\" + data[i].selector + \"')\\\"\" +\n\t\t\t\t\t\t\t\t\t\t\t\t\"href='#' data-toggle='modal' data-target='#myModal'>\" +\n\t\t\t\t\t\t\t\t\t\t\t\t\t\"<span class='glyphicon glyphicon-remove'></span>&nbsp;&nbsp;Delete\" +\n\t\t\t\t\t\t\t\t\t\t\t\"</a>\" +\n\t\t\t\t\t\t\t\t\t\t\"</li>\" +\n\t\t\t\t\t\t\t\t\t\"</ul>\" +\n\t\t\t\t\t\t\t\t\"</div>\" +\n\t\t\t\t\t\t\t\"</td>\" +\n\t\t\t\t\t\t\"</tr>\";\n\n\t\t\ttbody.append(html);\n\t\t}\n\t}\n\tcatch (e) {}\n}\n \nfunction action(action, data_id, data) {\n\tthis.modal = { header: $(\".modal-header>h3\"),\n\t\t\t\t   body: $(\".modal-body\"),\n\t\t\t\t   footer: $(\".modal-footer\") };\n\n\tthis.edit = function (data_id, data) {\n\t\tthis.modal.header.html(\"Editar agendamento\");\n\t\tthis.modal.body.html(modal_original.body);\n\t\tthis.modal.footer.html(\"<button type='button' id='edelete' class='btn btn-primary' data-loading-text='Editando...' data-complete-text='Agendamento salvo!'>SALVAR</button>\");\n\n\t\t$(\"#inputDate\").datepicker({ firstDay: 1 });\n\t\t\n\t\tif (time_format == \"standard\") {\n\t\t\t$(\"#inputTime\").timepicker({\n\t\t\t\ttimeFormat: 'hh:mm tt'\n\t\t\t});\n\t\t}\n\t\telse if (time_format == \"military\") {\n\t\t\t$(\"#inputTime\").timepicker();\n\t\t}\n\n\t\tdata_id = data_id.split(\"|\");\n\n\t\tthis.form = { title: data_id[1],\n\t\t\t\t\t  location: data_id[2],\n\t\t\t\t\t  timestamp: new Date(data_id[3]) };\n\n\t\ttime = {\n\t\t\thours: this.form.timestamp.getHours(),\n\t\t\tminutes: this.form.timestamp.getMinutes() < 10 ? \"0\" + this.form.timestamp.getMinutes() : this.form.timestamp.getMinutes(),\n\t\t\tampm: (this.form.timestamp.getHours() <= 12 ? \" am\" : \" pm\")\n\t\t}\n\n\t\tif (time_format == \"standard\") {\n\t\t\ttime.hours = (time.hours > 12) ? time.hours - 12 : time.hours;\n\n\t\t\ttime = time.hours + \":\" + time.minutes + time.ampm;\n\t\t}\n\t\telse if (time_format == \"military\") {\n\t\t\ttime = time.hours + \":\" + time.minutes;\n\t\t}\n\n\t\t$(\"#inputTitle\").val(this.form.title.replace(/&sQuote;/g, \"\\'\").replace(/&dQuote;/g, \"\\\"\"));\n\t\t$(\"#inputLocation\").val(this.form.location.replace(/&sQuote;/g, \"\\'\").replace(/&dQuote;/g, \"\\\"\"));\n\t\t$(\"#inputDate\").val(((this.form.timestamp.getMonth()+1 < 10) ? \"0\" + (this.form.timestamp.getMonth()+1) : (this.form.timestamp.getMonth()+1)) + \"/\" + ((this.form.timestamp.getDate() < 10) ? \"0\" + (this.form.timestamp.getDate()) : (this.form.timestamp.getDate())) + \"/\" + this.form.timestamp.getFullYear());\n\t\t$(\"#inputTime\").val(time);\n\t};\n\tthis.del = function(data_id, data) {\n\t\tthis.modal.header.html(\"Remover\");\n\n\t\ttime = data.split(\" \");\n\t\toriginalTime = time[time.length-1];\n\t\ttime = originalTime.split(\":\");\n\n\t\ttime = {\n\t\t\thours: time[0],\n\t\t\tminutes: time[1],\n\t\t\tampm: (time[0] <= 12 ? \"am\" : \"pm\")\n\t\t}\n\n\t\tif (time_format == \"standard\") {\n\t\t\ttime.hours = (time.hours > 12) ? time.hours - 12 : time.hours;\n\n\t\t\ttime = time.hours + \":\" + time.minutes + time.ampm;\n\n\t\t\tdata = data.replace(originalTime, time);\n\t\t}\n\n\t\tthis.modal.body.html(\"<h3 style='text-align: center'>Você está removenda:</h3><br /><h4 style='text-align: center'>\" + data.replace(/&sQuote;/g, \"\\'\").replace(/&dQuote;/g, \"\\\"\") + \"</h4>\");\n\t\tthis.modal.footer.html(\"<button type='button' id='edelete' class='btn btn-danger' data-loading-text='Removendo...' data-complete-text='Agendamento removido!'>REMOVER</button>\");\n\t};\n\t\n\tthis[action](data_id, data);\n\tvar beforeSend = this[action](data_id, data);\n\n\t$(\"button#edelete\").on(\"click\", function () {\n\t\tvar eDelete = $(this);\n\n\t\ttimestamp = new Date($(\"#inputDate\").val());\n\t\ttimestamp = timestamp.getFullYear() + \"-\" +\n\t\t\t\t\t(timestamp.getMonth() + 1 < 10 ? \"0\" + (timestamp.getMonth() + 1) : timestamp.getMonth() + 1) + \"-\" +\n\t\t\t\t\t(timestamp.getDate() < 10 ? \"0\" + timestamp.getDate() : timestamp.getDate());\n\n\t\tif (action == \"edit\") {\n\t\t\ttime = $(\"#inputTime\").val();\n\n\t\t\tif (time_format == \"standard\") {\n\t\t\t\tif (time.indexOf(\"am\") != -1) {\n\t\t\t\t\ttime = time.split(\" \")[0];\n\t\t\t\t}\n\t\t\t\telse {\n\t\t\t\t\ttime = time.split(\" \")[0];\n\t\t\t\t\ttimePm = time.split(\":\");\n\t\t\t\t\ttime = parseInt(timePm[0]) + 12 + \":\" + timePm[1];\n\t\t\t\t}\n\t\t\t}\n\t\t}\n\n\t\ttimestamp = timestamp + \" \" + time;\n\n\t\tthis.newForm = { title: $(\"#inputTitle\").val(),\n\t\t\t\t\t\t loc: $(\"#inputLocation\").val(),\n\t\t\t\t\t\t date: $(\"#inputDate\").val(),\n\t\t\t\t\t\t time: $(\"#inputTime\").val(),\n\t\t\t\t\t\t timestamp: timestamp };\n\n\t\tif (action == \"edit\") {\n\t\t\tif ((this.newForm.title || this.newForm.loc || this.newForm.date || this.newForm.time) == \"\") {\n\t\t\t\talert(\"Ocorreu algum problema. Verifique e tente novamente.\");\n\t\t\t\treturn false;\n\t\t\t}\n\t\t}\n\n\t\t$.ajax({\n\t\t\tdataType: \"json\",\n\t\t\ttype: \"POST\",\n\t\t\tdata: { action: action, id: data_id, title: this.newForm.title, loc: this.newForm.loc, timest: this.newForm.timestamp },\n\t\t\turl: \"./php/func_events.php\",\n\t\t\tbeforeSend: function() { eDelete.button(\"loading\"); eDelete.attr(\"autocomplete\", \"off\"); },\n\t\t\tcomplete: function() {\n\t\t\t\tif (action == \"edit\") {\n\t\t\t\t\t$(\".header\").after(\"<div class='alert alert-info'>\" +\n\t\t\t\t\t\t\t\t\t\t\"<a href='#' class='alert-link'>Agendamento</a> atualizado com sucesso!\" +\n\t\t\t\t\t\t\t\t\t\t\"</div>\");\n\t\t\t\t}\n\t\t\t\telse {\n\t\t\t\t\t$(\".header\").after(\"<div class='alert alert-danger'>\" +\n\t\t\t\t\t\t\t\t\t\t\"<a href='#' class='alert-link'>Agendamento </a> removido com sucesso!\" +\n\t\t\t\t\t\t\t\t\t\t\"</div>\");\n\t\t\t\t}\n\n\t\t\t\tvar interval = setInterval(function() {\n\t\t\t\t\t(action == \"edit\") ? $(\".alert-info\").fadeOut() : $(\".alert-danger\").fadeOut();\n\t\t\t\t}, 2000);\n\n\n\t\t\t\tsetTimeout(function() {\n\t\t\t\t\tclearInterval(interval);\n\t\t\t\t}, 2000);\n\n\t\t\t\teDelete.prop(\"disabled\", true);\n\t\t\t\teDelete.html(eDelete.attr(\"data-complete-text\"));\n\n\t\t\t\t$(\"#myModal\").modal(\"hide\");\n\t\t\t\tloadTable();\n\t\t\t}\n\t\t});\n\t});\n}\n\nfunction addEvent(form_data) {\n\t$.ajax({\n\t\ttype: \"POST\",\n\t\tdata: { action: \"insert\",\n\t\t\t\ttitle: form_data[1],\n\t\t\t\tloc: form_data[2],\n\t\t\t\ttimest: form_data[3] },\n\t\turl: \"./php/func_events.php\",\n\t\tbeforeSend: function() { $(\"button#add\").button(\"loading\") },\n\t\tsuccess: function(data) {\n\t\t\t$(\"#myModal\").modal(\"hide\");\n\t\t\t$(\".header\").after(\"<div class='alert alert-success'>\" +\n\t\t\t\t\t\t\t   \"<b>Feito!</b> <a href='#'' class='alert-link'>Agendamento</a> criado com sucesso!\" +\n\t\t\t\t\t\t\t   \"</div>\");\n\n\t\t\tsetInterval(function() {\n\t\t\t\t$(\".alert-success\").fadeOut();\n\t\t\t}, 2000);\n\n\t\t\tloadTable();\n\t\t},\n\t\terror: function(err) { alert(\"Ocorreu um erro ao adicionar o agendamento.\"); }\n\t});\n}\n\nfunction search() {\n\tevent.preventDefault();\n\n\tsearch_q[search_q.length] = { \"name\": \"action\", \"value\" : \"select\" };\n\n\t$.ajax({\n\t\ttype: \"POST\",\n\t\tdataType: \"json\",\n\t\tdata: search_q,\n\t\turl: \"./php/func_events.php\",\n\t\tbeforeSend: function() { tbody.html(loading); },\n\t\tsuccess: function(data) {\n\t\t\tgetEventsTable(data);\n\t\t},\n\t\terror: function() { tbody.html(not_found); }\n\t});\n}\n\nfunction escapeQuotes(str) {\n\tstr = str.replace(/\\'/g, \"&sQuote;\").replace(/\\\"/g, \"&dQuote;\");\n\n    return str;\n}",
+			"file": "index.html",
+			"settings":
+			{
+				"buffer_size": 211,
+				"encoding": "UTF-8",
+				"line_ending": "Windows",
+				"name": "<html>"
+			}
+		},
+		{
 			"file": "calendar/admin/js/script.js",
-			"file_size": 14005,
-			"file_write_time": 131725199218805076,
 			"settings":
 			{
 				"buffer_size": 13570,
@@ -110,13 +44,19 @@
 			}
 		},
 		{
-			"contents": "if (!Object.keys) {\n\tObject.keys = (function () {\n\t\tvar hasOwnProperty = Object.prototype.hasOwnProperty,\n\t\t\thasDontEnumBug = !({toString: null}).propertyIsEnumerable('toString'),\n\t\t\tdontEnums = ['toString', 'toLocaleString', 'valueOf', 'hasOwnProperty', 'isPrototypeOf', 'propertyIsEnumerable', 'constructor'],\n\t\t\tdontEnumsLength = dontEnums.length;\n\n\treturn function (obj) {\n\t\tif (typeof obj !== 'object' && typeof obj !== 'function' || obj === null) throw new TypeError('Object.keys called on non-object');\n\n\t\tvar result = [];\n\n\t\tfor (var prop in obj) { if (hasOwnProperty.call(obj, prop)) result.push(prop); }\n\n\t\tif (hasDontEnumBug) {\n\t\t\tfor (var i=0; i < dontEnumsLength; i++) {\n\t\t\tif (hasOwnProperty.call(obj, dontEnums[i])) result.push(dontEnums[i]);\n\t\t\t}\n\t\t}\n\t\treturn result;\n\t};\n  })();\n}\n\nvar m_text = [\"\", \"Janeiro\", \"Fevereiro\", \"Março\", \"Abril\", \"Maio\", \"Junho\", \"Julho\", \"Agosto\", \"Setembro\", \"Outubro\", \"Novembro\", \"Dezembro\"];\nvar weekdays = [\"SEGUNDA\", \"TERÇA\", \"QUARTA\", \"QUINTA\", \"SEXTA\", \"SÁBADO\", \"DOMINGO\"];\nvar tbody;\nvar this_td;\nvar time_format;\nvar d = new Date();\nvar day = d.getDate();\nvar month = d.getMonth() + 1;\nvar year = d.getFullYear();\nvar days_number = daysInMonth(month, year);\nvar actual_d = d.getDate();\nvar actual_m = d.getMonth() + 1;\nvar actual_y = d.getFullYear();\nvar page = 1, showEvents = [];\nvar storage;\nvar weekdaysChanged = false;\n\n$(function() {\n\ttbody = $(\"tbody\");\n\ttime_format = $(\"#timeFormat\").val();\n\n\ttbody.val(getCalendar(year, month));\n\n\twdaysOriginal();\n\n\t$(\".active\").on(\"click\", function () {\n\t\t$(this).removeClass(\"active\");\n\t\t$(this).hide();\n\t});\n\n\t$(\"table\").delegate(\"td\", \"click\", function () {\n\t\t$(\"td\").removeClass(\"active\");\n\t\t$(\"#myModalLabel\").text(\"Events\");\n\n\t\tif (!$(this).hasClass(\"blank\")) {\n\t\t\t$(this).addClass(\"active\");\n\n\n\t\t\tthis_td = $(this);\n\n\t\t\t$(\".modal-body\").empty();\n\t\t\t$(\".modal-footer\").empty().removeClass(\"addEvent\");\n\n\t\t\t$('#myModal').modal(\"show\");\n\n\t\t\tif (typeof($(this).children(\".label\").html()) !== \"undefined\") {\n\t\t\t\tpage = 1;\n\t\t\t\tshowEvents = [];\n\n\t\t\t\tif (parseInt(this_td.children(\".label\").html()) > 4) {\n\t\t\t\t\tshowEvents = [0, 1, 2, 3];\n\t\t\t\t}\n\t\t\t\telse {\n\t\t\t\t\tfor (i = 0; i < parseInt(this_td.children(\".label\").html()); i++) {\n\t\t\t\t\t\tshowEvents.push(i);\n\t\t\t\t\t}\n\t\t\t\t}\n\t\t\t\tgetFirstEvents(this_td);\n\t\t\t}\n\t\t\telse {\n\t\t\t\tgetFirstEvents(null);\n\t\t\t}\n\t\t}\n\t});\n\n\t$(\"#myModal\").on(\"hidden.bs.modal\", function () {\n\t\t$(\"td\").removeClass(\"active\");\n\t});\n\n\tvar width = $(window).width();\n\tif (width < 960) {\n\t\t$(\"tr.weekdays\").empty();\n\t\tfor (i = 0; i < 7; i++) {\n\t\t\tweekdays[i] = weekdays[i].substring(0, 3);\n\t\t\t$(\"tr.weekdays\").append(\"<th>\" + weekdays[i] + \"</th>\");\n\t\t}\n\t}\n});\n\nfunction getFirstEvents() {\n\t\t$.ajax({\n\t\t\tdataType: \"json\",\n\t\t\turl: \"calendar/php/date.php\",\n\t\t\ttype: \"POST\",\n\t\t\tdata: {\n\t\t\t\tselect: \"%Y-%c-%e\",\n\t\t\t\twhere: \"%Y-%c-%e\",\n\t\t\t\td: this_td.attr(\"id\"),\n\t\t\t\torder: \"DATE_FORMAT(timestamp, '%H-%i')\"\n\t\t\t},\n\t\t\tbeforeSend: function() { $(\".modal-body\").html(\"<span class=\\\"loading\\\">Loading events...</span>\"); },\n\t\t\tsuccess: function(data) {\n\t\t\t\tgetEvents(parseInt(this_td.children(\".label\").html()), data[this_td.attr(\"id\")], this_td.attr(\"id\"));\n\t\t\t},\n\t\t\terror: function () { getEvents(null, null, this_td.attr(\"id\")); }\n\t\t});\n}\n\nfunction wdaysOriginal() {\n\tif ($(\"tr.weekdays\").attr(\"id\") == \"sunday\" && !weekdaysChanged) {\n\t\tweekdays.unshift(weekdays.pop());\n\t\tweekdaysChanged = true;\n\t}\n\n\tfor (i = 0; i < 7; i++) {\n\t\t$(\"tr.weekdays\").append(\"<th>\" + weekdays[i] + \"</th>\");\n\t}\n}\n\nfunction daysInMonth(month, year) {\n\treturn new Date(year, month, 0).getDate();\n}\n\nfunction Go(e) {\n\tif (e === \"prev\") {\n\t\tif (month === 1) { year -= 1; month = 12; }\n\t\telse { month -= 1; }\n\t}\n\telse if (e === \"next\") {\n\t\tif (month === 12) { year += 1; month = 1; }\n\t\telse { month += 1; }\n\t}\n\telse if (e === \"today\") { year = actual_y; month = actual_m; }\n\n\tdays_number = daysInMonth(month, year);\n\n\ttbody.find(\"*\").remove();\n\ttbody.val(getCalendar(year, month));\n\n\t$(\"span#anio\").text(year);\n\t$(\"span#mes\").text(m_text[month]);\n}\n\nfunction getCalendar(y, m) {\n\tfunction firstDay(month, year) {\n\t\tif ($(\".weekdays\").attr(\"id\") == \"sunday\") { return new Date(year, (month - 1), 2).getDay(); }\n\t\telse { return new Date(year, (month - 1), 1).getDay(); }\n\t}\n\n\t$(\"span#mes\").text(m_text[month]);\n\t$(\"span#anio\").text(year);\n\n\tvar diap = 1,\n\t\tempty = 0;\n\n\tfirstDay = firstDay(m, y);\n\t// var daysLast = daysInMonth(m - 1, year) + 2;\n\t\n\tfor (i = 1; i <= 7; i++) {\n\t\tif (firstDay === 0) {\n\t\t\tfirstDay = 7;\n\t\t}\n\t\tif (i < firstDay) {\n\t\t\tif (i == 1) {\n\t\t\t\ttbody.append(\"<td class='border-left-off blank'><span></span></td>\");\n\t\t\t}\n\t\t\telse {\n\t\t\t\ttbody.append(\"<td class='blank'><span></span></td>\");\n\t\t\t}\n\t\t\tempty++;\n\t\t}\n\t\telse if (y == actual_y && m == actual_m && diap == actual_d) {\n\t\t\tif (i == 1) {\n\t\t\t\ttbody.append(\"<td id='\" + y + \"-\" + m + \"-\" + diap + \"' class='actual border-left-off'><span><a role='button' class='days' data-toggle='modal'>\" + diap + \"</a></span></td>\");\n\t\t\t}\n\t\t\telse {\n\t\t\t\ttbody.append(\"<td id='\" + y + \"-\" + m + \"-\" + diap + \"' class='actual'><span><a role='button' class='days' data-toggle='modal'>\" + diap + \"</a></span></td>\");\n\t\t\t}\n\t\t\tdiap++;\n\t\t}\n\t\telse {\n\t\t\tif (i == 1) {\n\t\t\t\ttbody.append(\"<td id='\" + y + \"-\" + m + \"-\" + diap + \"' class='border-left-off'><span><a role='button' class='days' data-toggle='modal'>\" + diap + \"</a></span></td>\");\n\t\t\t}\n\t\t\telse {\n\t\t\t\ttbody.append(\"<td id='\" + y + \"-\" + m + \"-\" + diap + \"'><span><a role='button' class='days' data-toggle='modal'>\" + diap + \"</a></span></td>\");\n\t\t\t}\n\t\t\tdiap++;\n\t\t}\n\t}\n\n\ttbody.wrapInner(\"<tr>\");\n\n\tfor (i = 1; i <= days_number; i++) {\n\t\tif (y === actual_y && m === actual_m && diap === actual_d) {\n\t\t\tif (i == 1 || i == 8 || i == 15 || i == 22 || i == 29) {\n\t\t\t\ttbody.append(\"<td id='\" + y + \"-\" + m + \"-\" + diap + \"' class='actual b border-left-off'><span><a role='button' class='days' data-toggle='modal'>\" + diap + \"</a></span></td>\");\n\t\t\t}\n\t\t\telse {\n\t\t\t\ttbody.append(\"<td id='\" + y + \"-\" + m + \"-\" + diap + \"' class='actual b'><span><a role='button' class='days' data-toggle='modal'>\" + diap + \"</a></span></td>\");\n\t\t\t}\n\t\t}\n\t\telse {\n\t\t\tif (i == 1 || i == 8 || i == 15 || i == 22 || i == 29) {\n\t\t\t\ttbody.append(\"<td id='\" + y + \"-\" + m + \"-\" + diap + \"' class='border-left-off b'><span><a role='button' class='days' data-toggle='modal'>\" + diap + \"</a></span></td>\");\n\t\t\t}\n\t\t\telse {\n\t\t\t\ttbody.append(\"<td id='\" + y + \"-\" + m + \"-\" + diap + \"' class='b'><span><a role='button' class='days' data-toggle='modal'>\" + diap + \"</a></span></td>\");\n\t\t\t}\n\t\t}\n\n\t\tif (i % 7 === 0) { tbody.append(\"</tr><tr>\"); }\n\n\t\tif (diap === days_number) {\n\t\t\tvar numberOfWeeks = Math.ceil((days_number + empty) / 7),\n\t\t\t\tpre_total = days_number + empty,\n\t\t\t\tpost_total = numberOfWeeks * 7;\n\n\t\t\tfor (i = 1; i <= post_total - pre_total; i++) {\n\t\t\t\ttbody.append(\"<td class='b blank'><span></span></td>\");\n\t\t\t}\n\t\t\t\n\t\t\tbreak;\n\t\t}\n\n\t\tdiap++;\n\t}\n\n\tif (\"sessionStorage\" in window && window.sessionStorage !== null) { storage = sessionStorage; }\n\telse { alert(\"What an old browser! The webpage won´t work correctly with this browser, update it!\"); }\n\n\tif (storage == sessionStorage && sessionStorage[y+\"-\"+m] !== undefined) {\n\t\tdata = JSON.parse(sessionStorage.getItem(y+\"-\"+m));\n\t\tfor (var key in data) {\n\t\t\t$(\"<span class='label label-success'>\" + Object.keys(data[key]).length + \"</span>\").prependTo($(\"#\" + key));\n\t\t}\n\t}\n\telse {\n\t\t$.ajax({\n\t\t\tdataType: \"json\",\n\t\t\turl: \"calendar/php/date.php\",\n\t\t\ttype: \"POST\",\n\t\t\tdata: {\n\t\t\t\tselect: \"%Y-%c-%e\",\n\t\t\t\twhere: \"%Y-%c\",\n\t\t\t\td: y + \"-\" + m,\n\t\t\t\torder: \"timestamp, id\"\n\t\t\t},\n\t\t\tbeforeSend: function() { $(\"#loading\").show(); },\n\t\t\tsuccess: function(data) {\n\t\t\t\tsessionStorage[y+\"-\"+m] = JSON.stringify(data);\n\t\t\t\tfor (var key in data) {\n\t\t\t\t\t$(\"<span class='label label-success'>\" + Object.keys(data[key]).length + \"</span>\").prependTo($(\"#\" + key));\n\t\t\t\t}\n\t\t\t},\n\t\t\tcomplete: function() { $(\"#loading\").fadeOut(200); }\n\t\t});\n\t}\n}\n\nfunction getEvents(e, data, td_id) {\n\n\tif ($(\"#admin\").val() == \"true\") {\n\t\t$(\"#addEvent\").remove();\n\t\t$(\".modal-header\").append(\"<button class='btn btn-small btn-success add' id='addEvent' onclick=\\\"addEvent('\"+ td_id + \"');\\\">+ Adicionar</button>\");\n\t}\n\n\t$(\".modal-body\").empty();\n\t$(\".modal-footer\").empty();\n\n\tif (e !== null) {\n\t\tif (e > 4 && page > 1 && e - (showEvents[showEvents.length-1]+1) !== 0 && typeof(showEvents[3]) !== \"string\") {\n\t\t\t$(\".modal-footer\").append(\"<a class='next' onclick=\\\"pageEvents('more', '\" + e + \"')\\\" href='javascript:void(0)'></a>\");\n\t\t\t$(\".modal-footer\").append(\"<a class='prev' onclick=\\\"pageEvents('less', '\" + e + \"')\\\" href='javascript:void(0)'></a>\");\n\t\t}\n\t\telse if (e > 4) {\n\t\t\tif (e - showEvents[showEvents.length-1] >= 1) {\n\t\t\t\t$(\".modal-footer\").append(\"<a class='next' onclick=\\\"pageEvents('more', '\" + e + \"')\\\" href='javascript:void(0)'></a>\");\n\t\t\t}\n\t\t\tif (page > 1) {\n\t\t\t\t$(\".modal-footer\").append(\"<a class='prev' onclick=\\\"pageEvents('less', '\" + e + \"')\\\" href='javascript:void(0)'></a>\");\n\t\t\t}\n\t\t}\n\n\t\tfor (i = 0; i < showEvents.length; i++) {\n\t\t\ttry {\n\t\t\t\tif (showEvents[i] != \"null\") {\n\t\t\t\t\tdata[i] = data[showEvents[i]];\n\t\t\t\t}\n\t\t\t\telse {\n\t\t\t\t\tbreak;\n\t\t\t\t}\n\n\t\t\t\ttime = data[i].timestamp.replace(/-|:/g, \" \").split(\" \").slice(3, 6);\n\t\t\t\ttime = new Date(2000, 01, 01, time[0], time[1], time[2]);\n\n\t\t\t\ttime = {\n\t\t\t\t\thours: time.getHours(),\n\t\t\t\t\tminutes: time.getMinutes() < 10 ? \"0\" + time.getMinutes() : time.getMinutes(),\n\t\t\t\t\tampm: (time.getHours() < 12 ? \"am\" : \"pm\")\n\t\t\t\t}\n\n\t\t\t\tif (time_format == \"standard\") {\n\t\t\t\t\ttime.hours = (time.hours > 12) ? time.hours - 12 : time.hours;\n\n\t\t\t\t\ttime = time.hours + \":\" + time.minutes + time.ampm;\n\t\t\t\t}\n\t\t\t\telse if (time_format == \"military\") {\n\t\t\t\t\ttime = time.hours + \":\" + time.minutes + \"hs\";\n\t\t\t\t}\n\n\t\t\t\tif (data[i].location === null) {\n\t\t\t\t\t$(\".modal-body\").append(\"<div id='event'><span class='title'><h4 style='margin: 24px 0px'>\" + data[i].title + \"</h4></span><span class='time'><span style='width: 78px; float: left;'><span class='glyphicon glyphicon-time' style='top: 2px'></span> \" + time + \"</span></span></div>\");\n\t\t\t\t}\n\t\t\t\telse {\n\t\t\t\t\t$(\".modal-body\").append(\"<div id='event'><span class='title'><h4>\" + data[i].title + \"</h4><p>at <i>\" + data[i].location + \"</i></p></span><span class='time'><span style='width: 78px; float: left;'><span class='glyphicon glyphicon-time' style='top: 2px'></span> \" + time + \"</span></span></div>\");\n\t\t\t\t}\n\t\t\t}\n\t\t\tcatch (err) {}\n\t\t}\n\t}\n\telse {\n\t\t$(\".modal-body\").append(\"<span class='not-found'>Nenhum agendamento para este dia.</span>\");\n\t}\n}\n\nfunction pageEvents(lessmore, e) {\n\tif (lessmore == \"less\") {\n\t\tpage -= 1;\n\n\t\tfor (key in showEvents) {\n\t\t\tshowEvents[key] -= 4;\n\t\t}\n\n\t\tgetFirstEvents();\n\t}\n\telse if (lessmore == \"more\") {\n\t\tpage += 1;\n\n\t\tfor (key in showEvents) {\n\t\t\tif (showEvents[key]+4 < e) {\n\t\t\t\tshowEvents[key] += 4;\n\t\t\t}\n\t\t\telse {\n\t\t\t\tshowEvents[key] += 4;\n\t\t\t\tshowEvents[key] = \"\" + showEvents[key] + \"\";\n\t\t\t}\n\t\t}\n\n\t\tgetFirstEvents();\n\t}\n}\n\nfunction addEvent(date) {\n\t$(\".modal-header\").html(modalAddEvent.header);\n\t$(\".modal-body\").html(modalAddEvent.body);\n\t$(\".modal-footer\").html(modalAddEvent.footer).addClass(\"addEvent\");\n\n\t$(\"#inputDate\").datepicker({ firstDay: 1 });\n\t\n\tif (time_format == \"standard\") {\n\t\t$(\"#inputTime\").timepicker({\n\t\t\ttimeFormat: 'hh:mm tt'\n\t\t});\n\t}\n\telse {\n\t\t$(\"#inputTime\").timepicker();\n\t}\n\n\tdate = date.split(\"-\");\n\tdate = date[1] + \"/\" + date[2] + \"/\" + date[0];\n\n\t$(\"#inputDate\").val(date);\n\n\t$(\"button#add\").on(\"click\", function() {\n\t\tform = { title: $(\"#inputTitle\").val(),\n\t\t\t\t location: $(\"#inputLocation\").val(),\n\t\t\t\t date: $(\"#inputDate\").val(),\n\t\t\t\t time: $(\"#inputTime\").val() };\n\n\t\ttitle = form.title;\n\t\tloc = form.location;\n\t\tdate = new Date(form.date);\n\t\tdate = date.getFullYear() + \"-\" +\n\t\t\t   (date.getMonth() + 1 < 10 ? \"0\" + (date.getMonth() + 1) : date.getMonth() + 1) + \"-\" +\n\t\t\t   (date.getDate() < 10 ? \"0\" + date.getDate() : date.getDate());\n\t\ttime = form.time + \":00\";\n\n\t\tif (time_format == \"standard\") {\n\n\t\t\tif (time.indexOf(\"am\") > -1) {\n\t\t\t\t\n\t\t\t\ttime = form.time.split(\" \")[0];\n\t\t\t\toriginal = time.split(\":\");\n\t\t\t\t\n\t\t\t\tif (parseInt(original[0]) == 12) {\n\t\t\t\t\ttime = \"00:\" + original[1];\n\t\t\t\t}\n\t\t\t}\n\t\t\telse {\n\t\t\t\ttime = form.time.split(\" \")[0];\n\t\t\t\toriginal = time.split(\":\");\n\n\t\t\t\tif (parseInt(original[0]) != 12) {\n\t\t\t\t\ttimePm = parseInt(original[0]) + 12;\n\t\t\t\t\ttime = timePm + \":\" + original[1];\n\t\t\t\t}\n\t\t\t}\n\t\t}\n\n\t\ttimestamp = date + \" \" + time;\n\n\t\tif ((title && loc && timestamp) !== \"\") {\n\t\t\tform_data = { 1: title, 2: loc, 3: timestamp };\n\t\t\t\n\t\t\t$.ajax({\n\t\t\t\ttype: \"POST\",\n\t\t\t\tdata: { action: \"insert\",\n\t\t\t\t\t\ttitle: form_data[1],\n\t\t\t\t\t\tloc: form_data[2],\n\t\t\t\t\t\ttimest: form_data[3] },\n\t\t\t\turl: \"calendar/admin/php/func_events.php\",\n\t\t\t\tbeforeSend: function() { $(\"button#add\").button(\"loading\"); },\n\t\t\t\tsuccess: function() {\n\t\t\t\t\t$(\"#myModal\").modal(\"hide\");\n\n\t\t\t\t\tsessionStorage.clear();\n\t\t\t\t\twindow.location.reload();\n\t\t\t\t},\n\t\t\t\terror: function() { alert(\"Ocorreu um erro ao gravar o agendamento.\"); }\n\t\t\t});\n\t\t}\n\t\telse {\n\t\t\talert(\"Você precisa informar todos os campos.\");\n\t\t}\n\t});\n}\n\n$(window).resize(function() {\n\tvar width = $(window).width();\n\tif (width < 960) {\n\t\twdaysOriginal();\n\t\t$(\"tr.weekdays\").empty();\n\n\t\tfor (i = 0; i < 7; i++) {\n\t\t\tweekdays[i] = weekdays[i].substring(0, 3);\n\t\t\t$(\"tr.weekdays\").append(\"<th>\" + weekdays[i] + \"</th>\");\n\t\t}\n\t}\n\telse {\n\t\t$(\"tr.weekdays\").empty();\n\t\twdaysOriginal();\n\t}\n});\n\n// Arrows shorcuts\n$(document).keydown(function(e) {\n\tvar key = e.which;\n\t\n\tif (key == \"37\") { Go(\"prev\"); }\n\tif (key == \"39\") { Go(\"next\"); }\n});\n\nvar modalAddEvent = { header: \"<button type='button' class='close' data-dismiss='modal' aria-hidden='true'>&times;</button><h3 id='myModalLabel'>Adicionar Agendamento</h3>\",\n\t\t\t\t\t\t body: \"<form class='form-horizontal' id='addEvent' action=' method='post'>\" +\n\t\t\t\t\t\t\t\t\t\"<div class='form-group'>\" +\n\t\t\t\t\t\t\t\t\t\t\"<label class='col-sm-3 control-label' for='inputTitle'>Titulo</label>\" +\n\t\t\t\t\t\t\t\t\t\t\"<div class='col-sm-7'>\" +\n\t\t\t\t\t\t\t\t\t\t\t\"<input type='text' id='inputTitle' class='form-control' maxlength='32' placeholder='Title' />\" +\n\t\t\t\t\t\t\t\t\t\t\"</div>\" +\n\t\t\t\t\t\t\t\t\t\"</div>\" +\n\t\t\t\t\t\t\t\t\t\"<div class='form-group'>\" +\n\t\t\t\t\t\t\t\t\t\t\"<label class='col-sm-3 control-label' for='inputLocation'>Local</label>\" +\n\t\t\t\t\t\t\t\t\t\t\"<div class='col-sm-7'>\" +\n\t\t\t\t\t\t\t\t\t\t\t\"<input type='text' id='inputLocation' class='form-control' maxlength='26' placeholder='Location' />\" +\n\t\t\t\t\t\t\t\t\t\t\"</div>\" +\n\t\t\t\t\t\t\t\t\t\"</div>\" +\n\t\t\t\t\t\t\t\t\t\"<div class='form-group'>\" +\n\t\t\t\t\t\t\t\t\t\t\"<label class='col-sm-3 control-label' for='inputDate'>Data</label>\" +\n\t\t\t\t\t\t\t\t\t\t\"<div class='col-sm-7'>\" +\n\t\t\t\t\t\t\t\t\t\t\t\"<input type='text' id='inputDate' class='form-control' maxlength='10' placeholder='Date' />\" +\n\t\t\t\t\t\t\t\t\t\t\"</div>\" +\n\t\t\t\t\t\t\t\t\t\t\"<div id='datepicker'></div>\" +\n\t\t\t\t\t\t\t\t\t\"</div>\" +\n\t\t\t\t\t\t\t\t\t\"<div class='form-group'>\" +\n\t\t\t\t\t\t\t\t\t\t\"<label class='col-sm-3 control-label' for='inputTime'>Horário</label>\" +\n\t\t\t\t\t\t\t\t\t\t\"<div class='col-sm-7'>\" +\n\t\t\t\t\t\t\t\t\t\t\t\"<input type='text' id='inputTime' class='form-control' maxlength='5' placeholder='Time' />\" +\n\t\t\t\t\t\t\t\t\t\t\"</div>\" +\n\t\t\t\t\t\t\t\t\t\"</div>\" +\n\t\t\t\t\t\t\t\t\"</form>\",\n\t\t\t\t\t\t footer: \"<button type='button' id='add' class='btn btn-success' data-loading-text='Criando agendamento...'>Salvar agendamento</button>\" };",
 			"file": "calendar/js/script.js",
-			"file_size": 15728,
-			"file_write_time": 131725192620427671,
 			"settings":
 			{
-				"buffer_size": 15220,
+				"buffer_size": 15610,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "calendar/install.php",
+			"settings":
+			{
+				"buffer_size": 7861,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -125,25 +65,26 @@
 			"file": "calendar.php",
 			"settings":
 			{
-				"buffer_size": 3012,
+				"buffer_size": 3021,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
+			}
+		},
+		{
+			"contents": "Searching 141 files for \"XPTO\"\n\nC:\\xampp\\htdocs\\agenda\\calendar.php:\n   37  \t\t<div class=\"container\">\n   38  \t\t\t<center>\n   39: \t\t\t<h4>Empresa XPTO - Agende seu horário</h4>\n   40  \t\t\t</center>\n   41  \t\t\t<table class=\"table table-bordered\">\n\n1 match in 1 file\n",
+			"settings":
+			{
+				"buffer_size": 260,
+				"line_ending": "Windows",
+				"name": "Find Results",
+				"scratch": true
 			}
 		},
 		{
 			"file": "calendar/admin/index.php",
 			"settings":
 			{
-				"buffer_size": 5531,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "Ex_ecalendar/calendar/admin/settings.php",
-			"settings":
-			{
-				"buffer_size": 564,
+				"buffer_size": 5527,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -183,12 +124,18 @@
 	[
 		"/C/xampp/htdocs/agenda",
 		"/C/xampp/htdocs/agenda/calendar",
-		"/C/xampp/htdocs/agenda/calendar/admin",
-		"/C/xampp/htdocs/agenda/calendar/config",
-		"/C/xampp/htdocs/agenda/calendar/php"
+		"/C/xampp/htdocs/agenda/calendar/js"
 	],
 	"file_history":
 	[
+		"/C/xampp/htdocs/agenda/calendar/admin/php/headerAdmin.php",
+		"/C/xampp/htdocs/agenda/Ex_ecalendar/calendar/admin/settings.php",
+		"/C/xampp/htdocs/agenda/Ex_ecalendar/calendar.php",
+		"/C/xampp/htdocs/agenda/Ex_ecalendar/calendar/admin/php/headerAdmin.php",
+		"/C/xampp/htdocs/agenda/Ex_ecalendar/calendar/js/script.js",
+		"/C/xampp/htdocs/agenda/Ex_ecalendar/calendar/admin/js/script.js",
+		"/C/xampp/htdocs/agenda/Ex_ecalendar/calendar/admin/index.php",
+		"/C/xampp/htdocs/agenda/Ex_ecalendar/calendar/admin/login.php",
 		"/C/xampp/htdocs/agenda/docs/index.html",
 		"/C/xampp/htdocs/agenda/Ex_ecalendar/calendar/install.php",
 		"/C/xampp/htdocs/agenda/calendar/install.php",
@@ -213,6 +160,12 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"XPTO",
+			"titile",
+			"loadi",
+			"events",
+			"EventsAge",
+			"Events",
 			"Control Panel",
 			"search",
 			"reverseList",
@@ -259,558 +212,24 @@
 	"groups":
 	[
 		{
-			"selected": 5,
+			"selected": 6,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "Ex_ecalendar/calendar/admin/js/script.js",
+					"file": "calendar/admin/login.php",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 13601,
+						"buffer_size": 1533,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								4546,
-								4546
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 2466.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 7,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "Ex_ecalendar/calendar/js/script.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 15238,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1327,
-								1333
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 362.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 11,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "Ex_ecalendar/calendar.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 2958,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								2630,
-								2632
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.sublime-syntax",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 933.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 8,
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "Ex_ecalendar/calendar/admin/index.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 5515,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								216,
-								216
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.sublime-syntax",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 3,
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 25520,
-						"regions":
-						{
-							"match":
-							{
-								"flags": 112,
-								"regions":
-								[
-									[
-										351,
-										364
-									],
-									[
-										691,
-										704
-									],
-									[
-										873,
-										886
-									],
-									[
-										1130,
-										1143
-									],
-									[
-										1596,
-										1609
-									],
-									[
-										1997,
-										2010
-									],
-									[
-										2269,
-										2282
-									],
-									[
-										2477,
-										2490
-									],
-									[
-										2545,
-										2558
-									],
-									[
-										2771,
-										2784
-									],
-									[
-										3173,
-										3186
-									],
-									[
-										3513,
-										3526
-									],
-									[
-										3708,
-										3721
-									],
-									[
-										4010,
-										4023
-									],
-									[
-										4424,
-										4437
-									],
-									[
-										4709,
-										4722
-									],
-									[
-										4917,
-										4930
-									],
-									[
-										4985,
-										4998
-									],
-									[
-										5224,
-										5237
-									],
-									[
-										5683,
-										5696
-									],
-									[
-										6023,
-										6036
-									],
-									[
-										6256,
-										6269
-									],
-									[
-										6657,
-										6670
-									],
-									[
-										6929,
-										6942
-									],
-									[
-										7137,
-										7150
-									],
-									[
-										7205,
-										7218
-									],
-									[
-										7431,
-										7444
-									],
-									[
-										7833,
-										7846
-									],
-									[
-										8173,
-										8186
-									],
-									[
-										8368,
-										8381
-									],
-									[
-										8670,
-										8683
-									],
-									[
-										9084,
-										9097
-									],
-									[
-										9369,
-										9382
-									],
-									[
-										9577,
-										9590
-									],
-									[
-										9645,
-										9658
-									],
-									[
-										9884,
-										9897
-									],
-									[
-										10343,
-										10356
-									],
-									[
-										10683,
-										10696
-									],
-									[
-										11046,
-										11059
-									],
-									[
-										11318,
-										11331
-									],
-									[
-										11526,
-										11539
-									],
-									[
-										11594,
-										11607
-									],
-									[
-										11820,
-										11833
-									],
-									[
-										12222,
-										12235
-									],
-									[
-										12562,
-										12575
-									],
-									[
-										12757,
-										12770
-									],
-									[
-										13059,
-										13072
-									],
-									[
-										13473,
-										13486
-									],
-									[
-										13758,
-										13771
-									],
-									[
-										13966,
-										13979
-									],
-									[
-										14034,
-										14047
-									],
-									[
-										14273,
-										14286
-									],
-									[
-										14732,
-										14745
-									],
-									[
-										15072,
-										15085
-									],
-									[
-										15330,
-										15343
-									],
-									[
-										15538,
-										15551
-									],
-									[
-										15606,
-										15619
-									],
-									[
-										15832,
-										15845
-									],
-									[
-										16234,
-										16247
-									],
-									[
-										16574,
-										16587
-									],
-									[
-										16769,
-										16782
-									],
-									[
-										17071,
-										17084
-									],
-									[
-										17485,
-										17498
-									],
-									[
-										17770,
-										17783
-									],
-									[
-										17978,
-										17991
-									],
-									[
-										18046,
-										18059
-									],
-									[
-										18285,
-										18298
-									],
-									[
-										18743,
-										18756
-									],
-									[
-										19083,
-										19096
-									],
-									[
-										19341,
-										19354
-									],
-									[
-										19549,
-										19562
-									],
-									[
-										19617,
-										19630
-									],
-									[
-										19843,
-										19856
-									],
-									[
-										20245,
-										20258
-									],
-									[
-										20585,
-										20598
-									],
-									[
-										20831,
-										20844
-									],
-									[
-										21245,
-										21258
-									],
-									[
-										21530,
-										21543
-									],
-									[
-										21738,
-										21751
-									],
-									[
-										21806,
-										21819
-									],
-									[
-										22045,
-										22058
-									],
-									[
-										22503,
-										22516
-									],
-									[
-										22843,
-										22856
-									],
-									[
-										23101,
-										23114
-									],
-									[
-										23309,
-										23322
-									],
-									[
-										23377,
-										23390
-									],
-									[
-										23603,
-										23616
-									],
-									[
-										24005,
-										24018
-									],
-									[
-										24345,
-										24358
-									],
-									[
-										24591,
-										24604
-									],
-									[
-										24900,
-										24913
-									],
-									[
-										25108,
-										25121
-									],
-									[
-										25176,
-										25189
-									],
-									[
-										25415,
-										25428
-									]
-								],
-								"scope": ""
-							}
-						},
-						"selection":
-						[
-							[
-								24597,
-								24597
-							]
-						],
-						"settings":
-						{
-							"detect_indentation": false,
-							"line_numbers": false,
-							"output_tag": 6,
-							"result_base_dir": "",
-							"result_file_regex": "^([^ \t].*):$",
-							"result_line_regex": "^ +([0-9]+):",
-							"scroll_past_end": true,
-							"syntax": "Packages/Default/Find Results.hidden-tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 10350.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 5,
-					"file": "Ex_ecalendar/calendar/admin/login.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1519,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								541,
-								541
+								0,
+								0
 							]
 						],
 						"settings":
@@ -820,60 +239,33 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 301.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 5,
 					"type": "text"
 				},
 				{
-					"buffer": 6,
-					"file": "Ex_ecalendar/calendar/admin/php/headerAdmin.php",
+					"buffer": 1,
+					"file": "index.html",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 741,
+						"buffer_size": 211,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								253,
-								253
+								108,
+								108
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/PHP/PHP.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 7,
-					"file": "calendar/admin/php/headerAdmin.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 732,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								297,
-								297
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.sublime-syntax"
+							"auto_name": "<html>",
+							"syntax": "Packages/HTML/HTML.sublime-syntax"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -883,37 +275,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 8,
-					"file": "calendar/admin/login.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1512,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1078,
-								1078
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.sublime-syntax",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 373.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 5,
-					"type": "text"
-				},
-				{
-					"buffer": 9,
+					"buffer": 2,
 					"file": "calendar/admin/js/script.js",
 					"semi_transient": false,
 					"settings":
@@ -938,11 +300,11 @@
 						"translation.y": 4194.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 9,
+					"stack_index": 7,
 					"type": "text"
 				},
 				{
-					"buffer": 10,
+					"buffer": 3,
 					"file": "calendar/admin/php/func_events.php",
 					"semi_transient": false,
 					"settings":
@@ -967,24 +329,24 @@
 						"translation.y": 630.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 10,
+					"stack_index": 8,
 					"type": "text"
 				},
 				{
-					"buffer": 11,
+					"buffer": 4,
 					"file": "calendar/js/script.js",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 15220,
+						"buffer_size": 15610,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								12946,
-								12946
+								8456,
+								8456
 							]
 						],
 						"settings":
@@ -992,20 +354,20 @@
 							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
 							"translate_tabs_to_spaces": false
 						},
-						"translation.x": 103.0,
-						"translation.y": 7794.0,
+						"translation.x": 0.0,
+						"translation.y": 5020.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 12,
+					"stack_index": 2,
 					"type": "text"
 				},
 				{
-					"buffer": 12,
-					"file": "calendar.php",
-					"semi_transient": false,
+					"buffer": 5,
+					"file": "calendar/install.php",
+					"semi_transient": true,
 					"settings":
 					{
-						"buffer_size": 3012,
+						"buffer_size": 7861,
 						"regions":
 						{
 						},
@@ -1025,24 +387,99 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 13,
+					"stack_index": 3,
 					"type": "text"
 				},
 				{
-					"buffer": 13,
-					"file": "calendar/admin/index.php",
+					"buffer": 6,
+					"file": "calendar.php",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 5531,
+						"buffer_size": 3021,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1083,
-								1083
+								1689,
+								1689
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 310.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 260,
+						"regions":
+						{
+							"match":
+							{
+								"flags": 112,
+								"regions":
+								[
+									[
+										143,
+										147
+									]
+								],
+								"scope": ""
+							}
+						},
+						"selection":
+						[
+							[
+								142,
+								142
+							]
+						],
+						"settings":
+						{
+							"detect_indentation": false,
+							"line_numbers": false,
+							"output_tag": 1,
+							"result_base_dir": "",
+							"result_file_regex": "^([^ \t].*):$",
+							"result_line_regex": "^ +([0-9]+):",
+							"scroll_past_end": true,
+							"syntax": "Packages/Default/Find Results.hidden-tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "calendar/admin/index.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 5527,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
 							]
 						],
 						"settings":
@@ -1055,34 +492,6 @@
 						"zoom_level": 1.0
 					},
 					"stack_index": 6,
-					"type": "text"
-				},
-				{
-					"buffer": 14,
-					"file": "Ex_ecalendar/calendar/admin/settings.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 564,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								338,
-								338
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 14,
 					"type": "text"
 				}
 			]

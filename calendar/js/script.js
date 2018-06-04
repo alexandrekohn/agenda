@@ -53,8 +53,9 @@ $(function() {
 	});
 
 	$("table").delegate("td", "click", function () {
+		var dateSelected = new Date($(this)[0].id);
 		$("td").removeClass("active");
-		$("#myModalLabel").text("Events");
+		$("#myModalLabel").text("Agendamentos do dia " + zeroFill(dateSelected.getDate(),2) + "/" + zeroFill((dateSelected.getMonth() + 1),2));
 
 		if (!$(this).hasClass("blank")) {
 			$(this).addClass("active");
@@ -112,12 +113,22 @@ function getFirstEvents() {
 				d: this_td.attr("id"),
 				order: "DATE_FORMAT(timestamp, '%H-%i')"
 			},
-			beforeSend: function() { $(".modal-body").html("<span class=\"loading\">Loading events...</span>"); },
+			beforeSend: function() { $(".modal-body").html("<span class=\"loading\">Carregando agendamentos...</span>"); },
 			success: function(data) {
 				getEvents(parseInt(this_td.children(".label").html()), data[this_td.attr("id")], this_td.attr("id"));
 			},
 			error: function () { getEvents(null, null, this_td.attr("id")); }
 		});
+}
+
+function zeroFill( number, width )
+{
+  width -= number.toString().length;
+  if ( width > 0 )
+  {
+    return new Array( width + (/\./.test( number ) ? 2 : 1) ).join( '0' ) + number;
+  }
+  return number + ""; // always return a string
 }
 
 function wdaysOriginal() {
