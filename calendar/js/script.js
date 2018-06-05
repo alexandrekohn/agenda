@@ -334,11 +334,11 @@ function getEvents(e, data, td_id) {
 					time = time.hours + ":" + time.minutes + "hs";
 				}
 
-				if (data[i].location === null) {
-					$(".modal-body").append("<div id='event'><span class='title'><h4 style='margin: 24px 0px'>" + data[i].title + "</h4></span><span class='time'><span style='width: 78px; float: left;'><span class='glyphicon glyphicon-time' style='top: 2px'></span> " + time + "</span></span></div>");
+				if (data[i].name === null) {
+					$(".modal-body").append("<div id='event'><span class='title'><h4 style='margin: 24px 0px'>" + data[i].name + "</h4></span><span class='time'><span style='width: 78px; float: left;'><span class='glyphicon glyphicon-time' style='top: 2px'></span> " + time + "</span></span></div>");
 				}
 				else {
-					$(".modal-body").append("<div id='event'><span class='title'><h4>" + data[i].title + "</h4><p>at <i>" + data[i].location + "</i></p></span><span class='time'><span style='width: 78px; float: left;'><span class='glyphicon glyphicon-time' style='top: 2px'></span> " + time + "</span></span></div>");
+					$(".modal-body").append("<div id='event'><span class='title'><h4>" + data[i].name + "</h4><p>Telefone: <i>" + data[i].phone + "</i></p><p>E-mail: <i>" + data[i].email + "</i></p></span><span class='time'><span style='width: 78px; float: left;'><span class='glyphicon glyphicon-time' style='top: 2px'></span> " + time + "</span></span></div>");
 				}
 			}
 			catch (err) {}
@@ -393,22 +393,39 @@ function addEvent(date) {
 	}
 
 	date = date.split("-");
-	date = date[1] + "/" + date[2] + "/" + date[0];
+	// akohn
+	date = date[2] + "/" + date[1] + "/" + date[0];
 
 	$("#inputDate").val(date);
 
+	// akohn
+	$('#myModal').modal("show");
+
 	$("button#add").on("click", function() {
-		form = { title: $("#inputTitle").val(),
+		/*form = { title: $("#inputTitle").val(),
 				 location: $("#inputLocation").val(),
+				 date: $("#inputDate").val(),
+				 time: $("#inputTime").val() };*/
+		// akohn
+		form = { name: $("#inputName").val(),
+				 phone: $("#inputPhone").val(),
+				 email: $("#inputMail").val(),
 				 date: $("#inputDate").val(),
 				 time: $("#inputTime").val() };
 
 		title = form.title;
 		loc = form.location;
+		name = form.name;
+		phone = form.phone;
+		email = form.email;
 		date = new Date(form.date);
-		date = date.getFullYear() + "-" +
+		/*date = date.getFullYear() + "-" +
 			   (date.getMonth() + 1 < 10 ? "0" + (date.getMonth() + 1) : date.getMonth() + 1) + "-" +
-			   (date.getDate() < 10 ? "0" + date.getDate() : date.getDate());
+			   (date.getDate() < 10 ? "0" + date.getDate() : date.getDate());*/
+		// akohn
+		date = date.getFullYear() + "-" +
+			   (date.getDate() < 10 ? "0" + date.getDate() : date.getDate()) + "-" +
+			   (date.getMonth() + 1 < 10 ? "0" + (date.getMonth() + 1) : date.getMonth() + 1);
 		time = form.time + ":00";
 
 		if (time_format == "standard") {
@@ -435,15 +452,22 @@ function addEvent(date) {
 
 		timestamp = date + " " + time;
 
-		if ((title && loc && timestamp) !== "") {
-			form_data = { 1: title, 2: loc, 3: timestamp };
+		if ((name && phone && timestamp) !== "") {
+			form_data = { 1: name, 2: phone, 3: email, 4: timestamp };
 			
 			$.ajax({
 				type: "POST",
-				data: { action: "insert",
+				/*data: { action: "insert",
 						title: form_data[1],
 						loc: form_data[2],
-						timest: form_data[3] },
+						timest: form_data[3] },*/
+				// akohn
+				data: { action: "insert",
+						name: form_data[1],
+						phone: form_data[2],
+						email: form_data[3],
+						timest: form_data[4] },
+
 				url: "calendar/admin/php/func_events.php",
 				beforeSend: function() { $("button#add").button("loading"); },
 				success: function() {
@@ -452,11 +476,11 @@ function addEvent(date) {
 					sessionStorage.clear();
 					window.location.reload();
 				},
-				error: function() { alert("There was an error trying to add the event."); }
+				error: function() { alert("Ocorreu um erro ao adicionar o agendamento."); }
 			});
 		}
 		else {
-			alert("You must complete all the fields.");
+			alert("Você precisa preencher todos os campos.");
 		}
 	});
 }
@@ -488,29 +512,47 @@ $(document).keydown(function(e) {
 
 var modalAddEvent = { header: "<button type='button' class='close' data-dismiss='modal' aria-hidden='true'>&times;</button><h3 id='myModalLabel'>Adicionar Agendamento</h3>",
 						 body: "<form class='form-horizontal' id='addEvent' action=' method='post'>" +
+						 			"<div class='form-group'>" +
+										"<label class='col-sm-3 control-label' for='inputName'>Nome</label>" +
+										"<div class='col-sm-7'>" +
+											"<input type='text' id='inputName' class='form-control' maxlength='26' placeholder='Nome' />" +
+										"</div>" +
+									"</div>" +
 									"<div class='form-group'>" +
+										"<label class='col-sm-3 control-label' for='inputPhone'>Telefone</label>" +
+										"<div class='col-sm-7'>" +
+											"<input type='text' id='inputPhone' class='form-control' maxlength='26' placeholder='Telefone' />" +
+										"</div>" +
+									"</div>" +
+									"<div class='form-group'>" +
+										"<label class='col-sm-3 control-label' for='inputMail'>E-mail</label>" +
+										"<div class='col-sm-7'>" +
+											"<input type='text' id='inputMail' class='form-control' maxlength='26' placeholder='E-mail' />" +
+										"</div>" +
+									"</div>" +
+									/*"<div class='form-group'>" +
 										"<label class='col-sm-3 control-label' for='inputTitle'>Titulo</label>" +
 										"<div class='col-sm-7'>" +
-											"<input type='text' id='inputTitle' class='form-control' maxlength='32' placeholder='Title' />" +
+											"<input type='text' id='inputTitle' class='form-control' maxlength='32' placeholder='Titulo' />" +
 										"</div>" +
 									"</div>" +
 									"<div class='form-group'>" +
 										"<label class='col-sm-3 control-label' for='inputLocation'>Local</label>" +
 										"<div class='col-sm-7'>" +
-											"<input type='text' id='inputLocation' class='form-control' maxlength='26' placeholder='Location' />" +
+											"<input type='text' id='inputLocation' class='form-control' maxlength='26' placeholder='Local' />" +
 										"</div>" +
-									"</div>" +
+									"</div>" +*/
 									"<div class='form-group'>" +
 										"<label class='col-sm-3 control-label' for='inputDate'>Data</label>" +
 										"<div class='col-sm-7'>" +
-											"<input type='text' id='inputDate' class='form-control' maxlength='10' placeholder='Date' />" +
+											"<input type='text' id='inputDate' class='form-control' maxlength='10' placeholder='Data' />" +
 										"</div>" +
 										"<div id='datepicker'></div>" +
 									"</div>" +
 									"<div class='form-group'>" +
 										"<label class='col-sm-3 control-label' for='inputTime'>Horário</label>" +
 										"<div class='col-sm-7'>" +
-											"<input type='text' id='inputTime' class='form-control' maxlength='5' placeholder='Time' />" +
+											"<input type='text' id='inputTime' class='form-control' maxlength='5' placeholder='Horário' />" +
 										"</div>" +
 									"</div>" +
 								"</form>",
