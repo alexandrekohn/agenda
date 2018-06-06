@@ -23,7 +23,7 @@ CREATE TABLE IF NOT EXISTS `events` (
   `title` varchar(45) NOT NULL DEFAULT 'No title',
   `location` varchar(200) NOT NULL DEFAULT 'No location',
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 
 -- Data exporting was unselected.
 /*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;
@@ -33,3 +33,5 @@ CREATE TABLE IF NOT EXISTS `events` (
 alter table events add column name varchar(200);
 alter table events add column email varchar(200);
 alter table events add column phone varchar(255);
+
+alter table events add column timestamp_end timestamp;

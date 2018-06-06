@@ -77,7 +77,8 @@ if (!isSet($_SESSION['admin'])) {
 						<thead>
 							<tr>
 								<th>Nome</th>
-								<th>Local</th>
+								<th>Telefone</th>
+								<th>E-mail</th>
 								<th id="reverseList">Data&nbsp;<span class="caret"></span></th>
 								<th></th>
 							</tr>
@@ -99,15 +100,21 @@ if (!isSet($_SESSION['admin'])) {
 					<div class="modal-body">
 						<form class="form-horizontal" id="addEvent" action="" method="post" role="form">
 							<div class="form-group">
-								<label class="col-sm-3 control-label" for="inputTitle">Titulo</label>
+								<label class="col-sm-3 control-label" for="inputName">Nome</label>
 								<div class="col-sm-7">
-									<input type="text" id="inputTitle" class="form-control" maxlength="32" placeholder="Titulo" />
+									<input type="text" id="inputName" class="form-control" maxlength="80" placeholder="Nome" />
 								</div>
 							</div>
 							<div class="form-group">
-								<label class="col-sm-3 control-label" for="inputLocation">Local</label>
+								<label class="col-sm-3 control-label" for="inputPhone">Telefone</label>
 								<div class="col-sm-7">
-									<input type="text" id="inputLocation" class="form-control" maxlength="26" placeholder="Local" />
+									<input type="text" id="inputPhone" class="form-control" maxlength="50" placeholder="Telefone" />
+								</div>
+							</div>
+							<div class="form-group">
+								<label class="col-sm-3 control-label" for="inputEmail">E-mail</label>
+								<div class="col-sm-7">
+									<input type="text" id="inputEmail" class="form-control" maxlength="80" placeholder="E-mail" />
 								</div>
 							</div>
 							<div class="form-group">

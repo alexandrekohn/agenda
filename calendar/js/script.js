@@ -325,20 +325,34 @@ function getEvents(e, data, td_id) {
 					ampm: (time.getHours() < 12 ? "am" : "pm")
 				}
 
+				time_end = data[i].timestamp_end.replace(/-|:/g, " ").split(" ").slice(3, 6);
+				time_end = new Date(2000, 01, 01, time_end[0], time_end[1], time_end[2]);
+
+				time_end = {
+					hours: time_end.getHours(),
+					minutes: time_end.getMinutes() < 10 ? "0" + time_end.getMinutes() : time_end.getMinutes(),
+					ampm: (time_end.getHours() < 12 ? "am" : "pm")
+				}
+
 				if (time_format == "standard") {
 					time.hours = (time.hours > 12) ? time.hours - 12 : time.hours;
 
 					time = time.hours + ":" + time.minutes + time.ampm;
+
+					time_end.hours = (time_end.hours > 12) ? time_end.hours - 12 : time_end.hours;
+
+					time_end = time_end.hours + ":" + time_end.minutes + time_end.ampm;
 				}
 				else if (time_format == "military") {
 					time = time.hours + ":" + time.minutes + "hs";
+					time_end = time_end.hours + ":" + time_end.minutes + "hs";
 				}
 
 				if (data[i].name === null) {
-					$(".modal-body").append("<div id='event'><span class='title'><h4 style='margin: 24px 0px'>" + data[i].name + "</h4></span><span class='time'><span style='width: 78px; float: left;'><span class='glyphicon glyphicon-time' style='top: 2px'></span> " + time + "</span></span></div>");
+					$(".modal-body").append("<div id='event'><span class='title'><h4 style='margin: 24px 0px'>" + data[i].name + "</h4></span><span class='time'><span style='width: 148px; float: left;'><span class='glyphicon glyphicon-time' style='top: 2px'></span> " + time + " - " + time_end + "</span></span></div>");
 				}
 				else {
-					$(".modal-body").append("<div id='event'><span class='title'><h4>" + data[i].name + "</h4><p>Telefone: <i>" + data[i].phone + "</i></p><p>E-mail: <i>" + data[i].email + "</i></p></span><span class='time'><span style='width: 78px; float: left;'><span class='glyphicon glyphicon-time' style='top: 2px'></span> " + time + "</span></span></div>");
+					$(".modal-body").append("<div id='event'><span class='title'><h4>" + data[i].name + "</h4><p>Telefone: <i>" + data[i].phone + "</i></p><p>E-mail: <i>" + data[i].email + "</i></p></span><span class='time'><span style='width: 148px; float: left;'><span class='glyphicon glyphicon-time' style='top: 2px'></span> " + time + " - " + time_end + "</span></span></div>");
 				}
 			}
 			catch (err) {}

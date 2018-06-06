@@ -66,7 +66,7 @@
 
 		if ($action == "edit") {
 			$timestamp = strtotime($timestamp) ? $timestamp : die;
-			$sql = "UPDATE events SET title = '".$title."', location = '".$location."', timestamp = '".$timestamp."' WHERE id = '".$id."'";
+			$sql = "UPDATE events SET name = '".$name."', phone = '".$phone."', email = '".$email."', title = '".$title."', location = '".$location."', timestamp = '".$timestamp."' WHERE id = '".$id."'";
 			
 		}
 		else if ($action == "del") {

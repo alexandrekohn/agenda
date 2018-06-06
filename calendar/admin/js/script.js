@@ -77,7 +77,7 @@ $(function() {
 				addEvent(form_data);
 			}
 			else {
-				alert("There must be something wrong. Check the information and try again.");
+				alert("Ocorreu um erro. Verifique as informações e tente novamente.");
 			}
 		});
 	});
@@ -127,9 +127,9 @@ $(function() {
 			},
 			complete: function() {
 				if (this_m !== undefined) { $(".sortMonth .dropdown-toggle").html(months[mSelected] + " <span class='caret'></span>") }
-					else if (this_y === undefined) { $(".sortMonth .dropdown-toggle").html("Month <span class='caret'></span>") }
+					else if (this_y === undefined) { $(".sortMonth .dropdown-toggle").html("Mês <span class='caret'></span>") }
 				if (this_y !== undefined) $(".sortYear .dropdown-toggle").html(ySelected + " <span class='caret'></span>");
-					else if (this_m === undefined) { $(".sortYear .dropdown-toggle").html("Year <span class='caret'></span>") }
+					else if (this_m === undefined) { $(".sortYear .dropdown-toggle").html("Ano <span class='caret'></span>") }
 			},
 			error: function() {
 				tbody.html(not_found);
@@ -205,8 +205,9 @@ function getEventsTable(data) {
 			timestamp = date + " " + time;
 
 			var html = "<tr>" +
-							"<td>" + data[i].title + "</td>" +
-							"<td>" + data[i].location + "</td>" +
+							"<td>" + data[i].name + "</td>" +
+							"<td>" + data[i].phone + "</td>" +
+							"<td>" + data[i].email + "</td>" +
 							"<td>" + timestamp + "</td>" +
 							"<td class='config'>" +
 								"<div class='btn-group pull-right'>" +
@@ -215,13 +216,13 @@ function getEventsTable(data) {
 									"</button>" +
 									"<ul class='dropdown-menu'>" +
 										"<li>" +
-											"<a class='edit' onclick=\"action('edit', '" + data[i].id + "|" +  escapeQuotes(data[i].title) + "|" + escapeQuotes(data[i].location) + "|" + data[i].selector + "')\" " +
+											"<a class='edit' onclick=\"action('edit', '" + data[i].id + "|" +  escapeQuotes(data[i].name) + "|" + escapeQuotes(data[i].phone) + "|" + escapeQuotes(data[i].email) + "|" + data[i].selector + "')\" " +
 												"href='#' data-toggle='modal' data-target='#myModal'>" +
 													"<span class='glyphicon glyphicon-edit'></span>&nbsp;&nbsp;Edit" +
 											"</a>" +
 										"</li>" +
 										"<li>" +
-											"<a class='delete' onclick=\"action('del', '" + data[i].id + "', '" +  escapeQuotes(data[i].title) + "&nbsp;at&nbsp;" + escapeQuotes(data[i].location) + "&nbsp;on&nbsp;" + data[i].selector + "')\"" +
+											"<a class='delete' onclick=\"action('del', '" + data[i].id + "', '" +  escapeQuotes(data[i].name) + "&nbsp;<br />&nbsp;" + escapeQuotes(data[i].phone) + "&nbsp;<br />&nbsp;" + escapeQuotes(data[i].email) + "&nbsp;<br />&nbsp;"  + data[i].selector + "')\"" +
 												"href='#' data-toggle='modal' data-target='#myModal'>" +
 													"<span class='glyphicon glyphicon-remove'></span>&nbsp;&nbsp;Delete" +
 											"</a>" +
@@ -260,9 +261,10 @@ function action(action, data_id, data) {
 
 		data_id = data_id.split("|");
 
-		this.form = { title: data_id[1],
-					  location: data_id[2],
-					  timestamp: new Date(data_id[3]) };
+		this.form = { name: data_id[1],
+					  phone: data_id[2],
+					  email: data_id[3],
+					  timestamp: new Date(data_id[4]) };
 
 		time = {
 			hours: this.form.timestamp.getHours(),
@@ -279,8 +281,9 @@ function action(action, data_id, data) {
 			time = time.hours + ":" + time.minutes;
 		}
 
-		$("#inputTitle").val(this.form.title.replace(/&sQuote;/g, "\'").replace(/&dQuote;/g, "\""));
-		$("#inputLocation").val(this.form.location.replace(/&sQuote;/g, "\'").replace(/&dQuote;/g, "\""));
+		$("#inputName").val(this.form.name.replace(/&sQuote;/g, "\'").replace(/&dQuote;/g, "\""));
+		$("#inputPhone").val(this.form.phone.replace(/&sQuote;/g, "\'").replace(/&dQuote;/g, "\""));
+		$("#inputEmail").val(this.form.email.replace(/&sQuote;/g, "\'").replace(/&dQuote;/g, "\""));
 		$("#inputDate").val(((this.form.timestamp.getMonth()+1 < 10) ? "0" + (this.form.timestamp.getMonth()+1) : (this.form.timestamp.getMonth()+1)) + "/" + ((this.form.timestamp.getDate() < 10) ? "0" + (this.form.timestamp.getDate()) : (this.form.timestamp.getDate())) + "/" + this.form.timestamp.getFullYear());
 		$("#inputTime").val(time);
 	};
@@ -305,7 +308,7 @@ function action(action, data_id, data) {
 			data = data.replace(originalTime, time);
 		}
 
-		this.modal.body.html("<h3 style='text-align: center'>Você está removenda:</h3><br /><h4 style='text-align: center'>" + data.replace(/&sQuote;/g, "\'").replace(/&dQuote;/g, "\"") + "</h4>");
+		this.modal.body.html("<h3 style='text-align: center'>Você está removendo o agendamento de:</h3><br /><h4 style='text-align: center'>" + data.replace(/&sQuote;/g, "\'").replace(/&dQuote;/g, "\"") + "</h4>");
 		this.modal.footer.html("<button type='button' id='edelete' class='btn btn-danger' data-loading-text='Removendo...' data-complete-text='Agendamento removido!'>REMOVER</button>");
 	};
 	
@@ -337,14 +340,15 @@ function action(action, data_id, data) {
 
 		timestamp = timestamp + " " + time;
 
-		this.newForm = { title: $("#inputTitle").val(),
-						 loc: $("#inputLocation").val(),
+		this.newForm = { name: $("#inputName").val(),
+						 phone: $("#inputPhone").val(),
+						 email: $("#inputEmail").val(),
 						 date: $("#inputDate").val(),
 						 time: $("#inputTime").val(),
 						 timestamp: timestamp };
 
 		if (action == "edit") {
-			if ((this.newForm.title || this.newForm.loc || this.newForm.date || this.newForm.time) == "") {
+			if ((this.newForm.name || this.newForm.phone || this.newForm.email || this.newForm.date || this.newForm.time) == "") {
 				alert("Ocorreu algum problema. Verifique e tente novamente.");
 				return false;
 			}
@@ -353,7 +357,7 @@ function action(action, data_id, data) {
 		$.ajax({
 			dataType: "json",
 			type: "POST",
-			data: { action: action, id: data_id, title: this.newForm.title, loc: this.newForm.loc, timest: this.newForm.timestamp },
+			data: { action: action, id: data_id, name: this.newForm.name, phone: this.newForm.phone, email: this.newForm.email, title: this.newForm.title, loc: this.newForm.loc, timest: this.newForm.timestamp },
 			url: "./php/func_events.php",
 			beforeSend: function() { eDelete.button("loading"); eDelete.attr("autocomplete", "off"); },
 			complete: function() {
