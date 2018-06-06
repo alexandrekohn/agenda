@@ -67,7 +67,7 @@
 			showTimezone: null,
 			showTime: true,
 			stepHour: 1,
-			stepMinute: 1,
+			stepMinute: 30,
 			stepSecond: 1,
 			stepMillisec: 1,
 			stepMicrosec: 1,
@@ -107,7 +107,8 @@
 			timezoneList: null,
 			addSliderAccess: false,
 			sliderAccessArgs: null,
-			controlType: 'slider',
+			//controlType: 'slider',
+			controlType: 'select',
 			defaultValue: null,
 			parse: 'strict'
 		};

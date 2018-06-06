@@ -10,6 +10,7 @@
 	$email = (isset($_POST['email'])) ? clean($link, $_POST['email']) : null;
 	$location = (isset($_POST['loc'])) ? clean($link, $_POST['loc']) : null;
 	$timestamp = (isset($_POST['timest'])) ? clean($link, $_POST['timest']) : null;
+	$timestamp_end = (isset($_POST['timestend'])) ? clean($link, $_POST['timestend']) : null;
 	$id = (isset($_POST['id'])) ? intval(clean($link, $_POST['id'])) : null;
 
 
@@ -56,7 +57,7 @@
 
 		$timestamp = strtotime($timestamp) ? $timestamp : die;
 
-		$sql = "INSERT INTO events (timestamp, name, phone, email, title, location) VALUES ('".$timestamp."','".$name."','".$phone."', '".$email."', '".$title."', '".$location."')";
+		$sql = "INSERT INTO events (timestamp, timestamp_end, name, phone, email, title, location) VALUES ('".$timestamp."','".$timestamp_end."','".$name."','".$phone."', '".$email."', '".$title."', '".$location."')";
 		echo $sql;
 		$query = mysqli_query($link, $sql);
 		

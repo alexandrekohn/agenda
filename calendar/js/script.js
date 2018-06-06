@@ -47,6 +47,7 @@ $(function() {
 
 	wdaysOriginal();
 
+
 	$(".active").on("click", function () {
 		$(this).removeClass("active");
 		$(this).hide();
@@ -403,7 +404,16 @@ function addEvent(date) {
 		});
 	}
 	else {
-		$("#inputTime").timepicker();
+		//$("#inputTime").timepicker();
+		$('#inputTime').timepicker({
+		    stepMinute: 30,
+		    controlType: 'slider',
+		    onSelect: function(dateText, inst){
+		    	var hourEndSp = dateText.split(":");
+		    	var hEnd = (parseInt(hourEndSp[0]) + 1) == 24 ? 0 : parseInt(hourEndSp[0]) + 1;
+	            $("#inputTimeEnd").val(hEnd + ":" + hourEndSp[1]);
+		    }
+		});
 	}
 
 	date = date.split("-");
@@ -425,7 +435,9 @@ function addEvent(date) {
 				 phone: $("#inputPhone").val(),
 				 email: $("#inputMail").val(),
 				 date: $("#inputDate").val(),
-				 time: $("#inputTime").val() };
+				 time: $("#inputTime").val(),
+				 timeEnd: $("#inputTimeEnd").val()
+				};
 
 		title = form.title;
 		loc = form.location;
@@ -441,6 +453,7 @@ function addEvent(date) {
 			   (date.getDate() < 10 ? "0" + date.getDate() : date.getDate()) + "-" +
 			   (date.getMonth() + 1 < 10 ? "0" + (date.getMonth() + 1) : date.getMonth() + 1);
 		time = form.time + ":00";
+		timeEnd = form.timeEnd + ":00";
 
 		if (time_format == "standard") {
 
@@ -465,9 +478,10 @@ function addEvent(date) {
 		}
 
 		timestamp = date + " " + time;
+		timestamp_end = date + " " + timeEnd;
 
 		if ((name && phone && timestamp) !== "") {
-			form_data = { 1: name, 2: phone, 3: email, 4: timestamp };
+			form_data = { 1: name, 2: phone, 3: email, 4: timestamp, 5: timestamp_end };
 			
 			$.ajax({
 				type: "POST",
@@ -480,7 +494,8 @@ function addEvent(date) {
 						name: form_data[1],
 						phone: form_data[2],
 						email: form_data[3],
-						timest: form_data[4] },
+						timest: form_data[4],
+						timestend: form_data[5] },
 
 				url: "calendar/admin/php/func_events.php",
 				beforeSend: function() { $("button#add").button("loading"); },
@@ -564,9 +579,15 @@ var modalAddEvent = { header: "<button type='button' class='close' data-dismiss=
 										"<div id='datepicker'></div>" +
 									"</div>" +
 									"<div class='form-group'>" +
-										"<label class='col-sm-3 control-label' for='inputTime'>Horário</label>" +
+										"<label class='col-sm-3 control-label' for='inputTime'>De</label>" +
 										"<div class='col-sm-7'>" +
-											"<input type='text' id='inputTime' class='form-control' maxlength='5' placeholder='Horário' />" +
+											"<input type='text' id='inputTime' class='form-control' maxlength='5' placeholder='De' />" +
+										"</div>" +
+									"</div>" +
+									"<div class='form-group'>" +
+										"<label class='col-sm-3 control-label' for='inputTime'>Até</label>" +
+										"<div class='col-sm-7'>" +
+											"<input type='text' id='inputTimeEnd' class='form-control' maxlength='5' placeholder='Até' readonly='true' />" +
 										"</div>" +
 									"</div>" +
 								"</form>",

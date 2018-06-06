@@ -38,7 +38,7 @@ require 'calendar/admin/settings.php';
 		?>
 		<div class="container">
 			<center>
-			<h3>Empresa XPTO - Agende seu horário</h3>
+			<h3>Empresa XPTO</h3>
 			<button class='btn btn-small btn-success add' id='addAgendamentoBtnPrincipal' onclick="addEvent(GetDataAtual());"><span class='glyphicon glyphicon-plus'></span> Agendar Horário</button>
 			</center>
 			
