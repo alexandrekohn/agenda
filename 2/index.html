@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css">
+  <link href="https://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+  <link href="style.css" rel="stylesheet" type="text/css">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/moment@2.22.1/min/moment-with-locales.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jquery-touchswipe@1.6.18/jquery.touchSwipe.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/eonasdan-bootstrap-datetimepicker@4.17.47/build/js/bootstrap-datetimepicker.min.js"></script>
+
+  <script src="dist/js/jquery-calendar.min.js"></script>
+  <link rel="stylesheet" href="dist/css/jquery-calendar.min.css">
+  <title>Agenda</title>
+  <script>
+    $(document).ready(function(){
+      moment.locale('pt-BR');
+      var now = moment();
+
+      /**
+       * Many events
+       */
+      var events = [
+        {
+          start: moment('2018-07-02 09:00').format('X'),/*now.startOf('week').add(9, 'h').format('X')*/
+          end: moment('2018-07-02 09:30').format('X'), /*now.startOf('week').add(10, 'h').format('X'),*/
+          title: 'Agendamento Recurso 01',
+          content: 'Horário marcado! <br> <p>Teste</p>',
+          category:'Recurso 01'
+        },
+        {
+          start: moment('2018-07-02 09:00').format('X'),
+          end: moment('2018-07-02 09:30').format('X'),
+          title: 'Agendamento Recurso 02',
+          content: 'Horário marcado! <br> <p>Teste</p>',
+          category:'Recurso 02'
+        },
+        {
+          start: moment('2018-07-02 10:00').format('X'),
+          end: moment('2018-07-02 11:00').format('X'),
+          title: 'Agendamento Recurso 02',
+          content: 'Horário marcado! <br> <p>Teste</p>',
+          category:'Recurso 02'
+        },
+      ];
+
+      /**
+       * A daynote
+       */
+      var daynotes = [
+        {
+          time: now.startOf('week').add(15, 'h').add(30, 'm').format('X'),
+          title: 'Leo\'s holiday',
+          content: 'yo',
+          category: 'holiday'
+        }
+      ];
+
+      /**
+       * Init the calendar
+       */
+      var calendar = $('#calendar').Calendar({
+        locale: 'pt-BR',
+        weekday: {
+          timeline: {
+            intervalMinutes: 30,
+            fromHour: 8,
+            format: 'HH:mm',
+            autoResize: true
+          }
+        },
+        event: {
+          hover: {
+            delay:10000
+          }
+        },
+        events: events
+        //daynotes: daynotes
+      }).init();
+
+    });
+
+
+    </script>
+</head>
+<body>
+
+  <div class="container-fluid">
+    <h1 class="text-center">Agenda Online</h1>
+    <div class="row">
+      <div class="col-xs-12">
+        <h1>Agende seu horário</h1>
+        <div id="calendar"></div>
+      </div>
+    </div>
+  </div>
+
+
+</body>
+
+</html>
