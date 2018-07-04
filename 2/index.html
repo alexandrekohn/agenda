@@ -13,7 +13,7 @@
   <script src="https://cdn.jsdelivr.net/npm/jquery-touchswipe@1.6.18/jquery.touchSwipe.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/eonasdan-bootstrap-datetimepicker@4.17.47/build/js/bootstrap-datetimepicker.min.js"></script>
 
-  <script src="dist/js/jquery-calendar.min.js"></script>
+  <script src="dist/js/jquery-calendar.js"></script>
   <link rel="stylesheet" href="dist/css/jquery-calendar.min.css">
   <title>Agenda</title>
   <script>
@@ -46,6 +46,20 @@
           content: 'Horário marcado! <br> <p>Teste</p>',
           category:'Recurso 02'
         },
+        {
+          start: moment('2018-07-04 13:30').format('X'),
+          end: moment('2018-07-04 14:30').format('X'),
+          title: 'Agendamento Recurso 03',
+          content: 'Horário marcado! <br> <p>Teste</p>',
+          category:'Recurso 03'
+        },
+        {
+          start: moment('2018-07-05 09:30').format('X'),
+          end: moment('2018-07-05 10:30').format('X'),
+          title: 'Agendamento Recurso 03',
+          content: 'Horário marcado! <br> <p>Teste</p>',
+          category:'Recurso 03'
+        }
       ];
 
       /**
@@ -78,6 +92,10 @@
             delay:10000
           }
         },
+        colors: {
+          events: ['#B71C1C','#880E4F','#4A148C','#1A237E','#004D40','#33691E','#E65100','#3E2723','#212121','#263238'],
+          random: false
+        },
         events: events
         //daynotes: daynotes
       }).init();
@@ -93,13 +111,54 @@
     <h1 class="text-center">Agenda Online</h1>
     <div class="row">
       <div class="col-xs-12">
-        <h1>Agende seu horário</h1>
+        <!-- Button to open create modal -->
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal-create">
+          <i class="glyphicon glyphicon-plus"></i> Agendar um horário
+        </button>
+        <hr class="featurette-divider">
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-xs-12">
         <div id="calendar"></div>
       </div>
     </div>
   </div>
 
+  <!-- Create modal -->
+  <div id="modal-create" class="modal fade" tabindex="-1" role="dialog" data-backdrop="static">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Fechar"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title">Agendar um horário</h4>
+        </div>
+        <div class="modal-body">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-xs-12">
+                <!-- Create form -->
+                <form id="form-create" class="form">
+                  <input type="text" placeholder="De" class="start form-control dtp">
+                  <input type="text" placeholder="Até" class="end form-control dtp">
+                  <input type="text" placeholder="Titulo" class="title form-control">
+                  <input type="text" placeholder="Recurso" class="category form-control">
+                  <!-- Create button -->
+                  <button type="submit" class="btn btn-success">
+                    <i class="glyphicon glyphicon-plus"></i> Gravar
+                  </button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
+
+<script type="text/javascript" src="scripts.js"></script>
 </body>
 
 </html>
